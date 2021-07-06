@@ -1,0 +1,29 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+  
+.flex-item-left {
+    background-color: #f1f1f1;
+    flex: 50%;
+}
+  
+.flex-item-right {
+    background-color: dodgerblue;
+    flex: 50%;
+}
+  
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+}
+
+.isi{
+    background-color: white;
+    margin: 3% 10%;
+    border: 0px solid;
+    border-radius: 12px;
+    padding-left: 30px;
+}
