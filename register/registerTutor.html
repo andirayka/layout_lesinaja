@@ -24,7 +24,7 @@
                     <label for="ulangPassword">Ulangi Kata Sandi</label>
                     <input type="password" id="ulangPassword" name="ulangPassword" placeholder="Masukkan kata sandi Anda">
 
-                    <label for="nama">Nama Lengkap</label>
+                    <label for="nama">Nama</label>
                     <input type="text" id="nama" name="nama" placeholder="Contoh: Handoko Wahyudi">
 
                     <label for="noWA">No WA</label>
@@ -35,11 +35,26 @@
                     <input type="radio">Perempuan
                     <br><br>
 
-                    <label for="alamat">Alamat Domisili</label>
+                    <label for="alamat">Alamat</label>
+                    <select id="provinsi" name="provinsi" style="background-color: white; border: 1px solid #ccc; color: gray;">
+                        <option>Provinsi</option>
+                        <option>Jawa Timur</option>
+                        <option>Jawa Barat</option>
+                        <option>Jawa Tengah</option>
+                    </select>
+                    <select id="kabupaten" name="kabupaten" style="background-color: white; border: 1px solid #ccc; color: gray;">
+                        <option>Kabupaten / Kota</option>
+                        <option>Surabaya</option>
+                        <option>Sidoarjo</option>
+                        <option>Gresik</option>
+                    </select>
+                    <select id="kecamatan" name="provinsi" style="background-color: white; border: 1px solid #ccc; color: gray;">
+                        <option>Kecamatan</option>
+                        <option>Prambon</option>
+                        <option>Krian</option>
+                        <option>Sidoarjo</option>
+                    </select>
                     <input type="text" id="alamat" name="alamat" placeholder="Masukkan alamat lengkap Anda">
-
-                    <label for="kota">Kota</label>
-                    <input type="text" id="kota" name="kota" placeholder="Masukkan kota tempat Anda tinggal">
 
                     <label for="memberiLes">Apakah pernah memberi les atau mengajar sebelumnya?</label><br><br>
                     <input type="radio">Ya
@@ -66,7 +81,7 @@
                     <input type="file" id="CV" name="CV">
 
                     <label for="microteaching">Upload Link Microteaching (link google drive/youtube)</label>
-                    <input type="file" id="microteaching" name="microteaching">
+                    <input type="text" id="microteaching" name="microteaching" placeholder="Masukkan link">
 
                     <input type="submit" value="Daftar">
 
