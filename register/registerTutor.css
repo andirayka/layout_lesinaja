@@ -8,7 +8,7 @@ body {
 }
   
 .flex-item-left {
-    background-image: url(/home/aidin/Pictures/arclinux.png);
+    background-image: url(../img/logreg-logo.svg);
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center top;
@@ -42,6 +42,16 @@ input[type=text], select {
 }
 
 input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=file], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;

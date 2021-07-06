@@ -8,7 +8,7 @@ body {
 }
   
 .flex-item-left {
-    background-image: url(/home/aidin/Pictures/arclinux.png);
+    background-image: url(../img/logreg-logo.svg);
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;

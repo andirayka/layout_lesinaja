@@ -8,8 +8,8 @@
         <div class="flex-item-left"></div>
         <div class="flex-item-right">
             <div class="isi">
-                <form action="#">
-                    <strong style="margin-left: 15%;"><a href="#" style="color: black;">Daftar Wali Murid</a></strong>
+                <form action="../login/login.html">
+                    <strong style="margin-left: 15%;"><a href="registerWali.html" style="color: black;">Daftar Wali Murid</a></strong>
                     <strong style="float: right; margin-right: 15%;"><a href="#" style="color: black;">Daftar Tutor</a></strong>
                     <hr><br>
                     <strong class="font">Daftar Tutor/Pengajar</strong>
@@ -30,15 +30,46 @@
                     <label for="noWA">No WA</label>
                     <input type="text" id="noWA" name="noWA" placeholder="Contoh: 089912349876">
 
+                    <label for="kelamin">Jenis Kelamin </label><br><br>
+                    <input type="radio">Laki - Laki
+                    <input type="radio">Perempuan
+                    <br><br>
+
                     <label for="alamat">Alamat Domisili</label>
                     <input type="text" id="alamat" name="alamat" placeholder="Masukkan alamat lengkap Anda">
 
-                    <input type="submit" value="Submit">
-                    <hr>
-                    <div style="text-align: center;">
-                        <a>Belum punya akun?</a>
-                        <a href="#">Daftar di sini</a>
-                    </div>
+                    <label for="kota">Kota</label>
+                    <input type="text" id="kota" name="kota" placeholder="Masukkan kota tempat Anda tinggal">
+
+                    <label for="memberiLes">Apakah pernah memberi les atau mengajar sebelumnya?</label><br><br>
+                    <input type="radio">Ya
+                    <input type="radio">Tidak
+                    <br><br>
+
+                    <label for="pengalamanMengajar">Jika pernah, sebutkan semua pengalaman mengajar yang pernah anda lakukan</label>
+                    <input type="text" id="pengalamanMengajar" name="pengalamanMengajar" placeholder="Masukkan pengalaman Anda satu persatu">
+
+                    <label for="kendaraan">Apakah anda punya kendaraan untuk operasional sehari-hari?</label><br><br>
+                    <input type="radio">Ya
+                    <input type="radio">Tidak
+                    <br><br>
+
+                    <label for="fname">Pendidikan Terakhir</label>
+                    <select id="NGLC" name="NGLC" style="background-color: white; border: 1px solid #ccc; color: gray;">
+                        <option>Pilih salah satu</option>
+                        <option>SD</option>
+                        <option>SMP</option>
+                        <option>SMA/SMK</option>
+                    </select>
+
+                    <label for="CV">Upload Curriculum Vitae (CV)</label>
+                    <input type="file" id="CV" name="CV">
+
+                    <label for="microteaching">Upload Link Microteaching (link google drive/youtube)</label>
+                    <input type="file" id="microteaching" name="microteaching">
+
+                    <input type="submit" value="Daftar">
+
                 </form>
             </div>
         </div>
