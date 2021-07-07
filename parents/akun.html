@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>Daftar Wali Murid</title>
+    <link rel="stylesheet" href="akun.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item-left">
+            <div class="sidenav">
+                <div class="btn-group">
+                    <button class="button atas">Beranda</button>
+                    <button class="button" style="background-color: #FFCC00;">Akun</button>
+                    <button class="button">Lowongan</button>
+                    <button class="button">Les</button>
+                    <button class="button bawah">Keluar</button>
+                </div>
+            </div>
+        </div>
+        <div class="flex-item-right">
+            <div class="isiProfil">
+                <form action="../login/login.html">
+                    <h1>Akun Wali Murid</h1>
+
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" name="nama" value="Handoko Wahyudi Waluyo Sucipto">
+
+                    <label for="fname">Email</label>
+                    <input type="text" id="fname" name="firstname" value="handoko@mail.com">
+                
+                    <label for="noWA">Nomor WA</label>
+                    <input type="text" id="noWA" name="noWA" value="089912345678">
+
+                    <label for="pekerjaan">Pekerjaan</label>
+                    <input type="text" id="pekerjaan" name="pekerjaan" value="Jalan-jalan">
+
+                    <label for="alamat">Provinsi</label>
+                    <select id="provinsi" name="provinsi" style="background-color: white; border: 1px solid #ccc;">
+                        <option>Jawa Timur</option>
+                        <option>Jawa Barat</option>
+                        <option>Jawa Tengah</option>
+                    </select>
+
+                    <label for="kabupaten">Kabupaten / Kota</label>
+                    <select id="kabupaten" name="kabupaten" style="background-color: white; border: 1px solid #ccc;">
+                        <option>Sidoarjo</option>
+                        <option>Surabaya</option>
+                        <option>Gresik</option>
+                    </select>
+
+                    <label for="kecamatan">Kecamatan</label>
+                    <select id="kecamatan" name="provinsi" style="background-color: white; border: 1px solid #ccc;">
+                        <option>Jabon</option>
+                        <option>Prambon</option>
+                        <option>Krian</option>
+                        <option>Sidoarjo</option>
+                    </select>
+
+                    <label for="alamat">Alamat</label>
+                    <textarea id="alamat" name="alamat" rows="4" cols="100%">Perum Graha Kuncara Blok H No.29 Kemiri , Sidoarjo, Jawa Timur, Kemiri, Kec. Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61234
+                    </textarea>                    
+
+                    <h2>Ganti Kata Sandi</h2>
+
+                    <label for="password">Kata Sandi Lama</label>
+                    <input type="password" id="password" name="password" value="Percobaanpassword">
+
+                    <label for="password">Kata Sandi Baru</label>
+                    <input type="password" id="password" name="password" value="Percobaanpassword">
+                    
+                    <label for="ulangPassword">Ulangi Kata Sandi</label>
+                    <input type="password" id="ulangPassword" name="ulangPassword" value="Percobaanpassword">
+
+                    <input type="submit" value="Daftar">
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
