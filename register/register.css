@@ -1,0 +1,77 @@
+body {
+    background-color: #2D9A3F;
+    background-image: url(../img/logreg-logo.svg);
+    background-size: 40%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-position: 10%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+  
+.flex-item-left {
+    flex: 50%;
+}
+  
+.flex-item-right {
+    flex: 50%;
+}
+  
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+}
+
+.font {
+    font-size: 150%;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+input[type=submit] {
+    width: 100%;
+    background-color: #FFCC00;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #F8AC30;
+}
+  
+.isi {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+    margin: 3% 10%;
+    margin-right: 20%;
+    margin-top: 10%;
+}
