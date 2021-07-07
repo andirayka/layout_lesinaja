@@ -19,7 +19,11 @@
         <div class="flex-item-right">
             <div class="isiProfil">
                 <form action="../login/login.html">
-                    <h1>Akun Wali Murid</h1>
+                    <h1>Akun Tutor/Pengajar</h1>
+
+                    <img src="../img/bule.jpeg" alt="" style="width: 30%;">
+                    <input type="file">
+                    <br><br>
 
                     <label for="nama">Nama</label>
                     <input type="text" id="nama" name="nama" value="Handoko Wahyudi Waluyo Sucipto">
@@ -30,8 +34,10 @@
                     <label for="noWA">Nomor WA</label>
                     <input type="text" id="noWA" name="noWA" value="089912345678">
 
-                    <label for="pekerjaan">Pekerjaan</label>
-                    <input type="text" id="pekerjaan" name="pekerjaan" value="Jalan-jalan">
+                    <label for="gender">Jenis Kelamin</label><br><br>
+                    <input type="radio" id="laki" name="gender" checked="checked">Laki - laki
+                    <input type="radio" id="perempuan" name="gender">Perempuan
+                    <br><br>
 
                     <label for="alamat">Provinsi</label>
                     <select id="provinsi" name="provinsi" style="background-color: white; border: 1px solid #ccc;">
@@ -57,7 +63,30 @@
 
                     <label for="alamat">Alamat</label>
                     <textarea id="alamat" name="alamat" rows="4" cols="100%">Perum Graha Kuncara Blok H No.29 Kemiri , Sidoarjo, Jawa Timur, Kemiri, Kec. Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61234
-                    </textarea>                    
+                    </textarea>
+                    <br><br>
+
+                    <label for="perguruan">Perguruan Tinggi</label>
+                    <input type="text" id="perguruan" name="perguruan" value="Poloteknik Elektronika Surabaya">
+
+                    <label for="jurusan">Jurusan</label>
+                    <input type="text" id="jurusan" name="jurusan" value="Informatika">
+
+                    <label for="mapel">Mapel yang dikuasai</label>
+                    <select id="mapel" name="mapel" style="background-color: white; border: 1px solid #ccc;">
+                        <option>Olahraga</option>
+                        <option>Teknik</option>
+                        <option>Bahasa</option>
+                        <option>MTK</option>
+                    </select>
+
+                    <label for="pilihan">Apakah pernah memberi les atau mengajar sebelumnya?</label><br><br>
+                    <input type="radio" id="ya" name="pilihan" checked="checked">Ya
+                    <input type="radio" id="tidak" name="pilihan">Tidak
+                    <br><br>
+
+                    <label for="pengalaman">Jika pernah, sebutkan semua pengalaman mengajar yang pernah anda lakukan</label>
+                    <input type="text" id="pengalaman" name="pengalaman" value="Jalan - jalan">
 
                     <h2>Ganti Kata Sandi</h2>
 
