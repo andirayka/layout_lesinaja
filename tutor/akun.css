@@ -31,13 +31,13 @@ body {
 }
 
 input[type=file], select {
-    width: 30%;
+    width: 50%;
     padding: 12px 20px;
-    margin: 0px;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    margin-top: 28%;
 }
 
 input[type=text], select {
@@ -115,7 +115,14 @@ input[type=submit]:hover {
     border-radius: 0px 0px 5px 5px;
 }
   
-  .btn-group .button:hover {
+.btn-group .button:hover {
     background-color: #FFCC00;
     width: 100%;
-  }
+}
+
+textarea{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    height: 5%;
+}
