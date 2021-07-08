@@ -1,24 +1,20 @@
 body {
     background-color: #2D9A3F;
-    background-size: 40%;
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-position: 10%;
 }
 
 .flex-container {
     display: flex;
     flex-direction: row;
 }
-  
+
 .flex-item-left {
     flex: 30%;
 }
-  
+
 .flex-item-right {
     flex: 70%;
 }
-  
+
   /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 800px) {
     .flex-container {
@@ -27,40 +23,82 @@ body {
 }
 
 .font {
-    font-size: 150%;
+    font-size: 120%;
+    padding-bottom: 5%;
 }
 
-input[type=text], select, input[type=password]{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-  
 input[type=submit] {
     width: 100%;
-    background-color: #FFCC00;
-    color: white;
-    padding: 14px 20px;
+    padding: 16px 20px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    color: white;
+    background-color: cornflowerblue;
 }
-  
+
 input[type=submit]:hover {
+    background-color: blue;
+}
+
+.presensi {
+    background-color: cornflowerblue;
+    border-radius: 4px;
+    color: white;
+    margin: {
+        top: 6%;
+        left: 11%;
+    }
+    padding: 15px 12px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.presensi:hover {
+    background-color: blue;
+}
+
+.batal {
+    background-color: red;
+    text-decoration: none;
+    display: block;
+    border-radius: 4px;
+    padding: 15px 12px;
+    color: white;
+}
+
+.batal:hover {
+    background-color: rgb(212, 0, 0);
+}
+
+.tombol {
+    width: 30%;
+    background-color: #FFCC00;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 2%;
+    text-align: center;
+}
+
+.tombol a {
+    color: black;
+    font-size: 120%;
+    text-decoration: none;
+}
+
+.tombol:hover {
     background-color: #F8AC30;
 }
-  
-.isiProfil {
+
+.isi {
     border-radius: 5px;
-    background-color: white;
-    padding: 20px;
+    padding: 1px 20px;
     margin-right: 4%;
-    margin-top: 5%;
     margin-left: 2%;
 }
 
@@ -93,20 +131,25 @@ input[type=submit]:hover {
 
 .bawah {
     border-radius: 0px 0px 5px 5px;
+    margin-bottom: 2%;
 }
-  
+
 .btn-group .button:hover {
     background-color: #FFCC00;
     width: 100%;
 }
 
-textarea{
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-    height: 5%;
-}
-
 a {
     text-decoration: none;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }

@@ -1,0 +1,138 @@
+body {
+  background-color: #2d9a3f;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-item-left {
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+}
+
+.flex-item-right {
+  -webkit-box-flex: 70%;
+      -ms-flex: 70%;
+          flex: 70%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+input[type=submit] {
+  width: 100%;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+  background-color: #FFCC00;
+  font-size: 110%;
+}
+
+input[type=submit]:hover {
+  background-color: #F8AC30;
+}
+
+input[type=text], select {
+  background-color: white;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.isi {
+  border-radius: 5px;
+  padding: 1px 20px;
+  margin-right: 4%;
+  margin-left: 2%;
+  background-color: white;
+  padding-left: 20px;
+  margin-top: 5%;
+  margin-bottom: 5px;
+}
+
+.sidenav {
+  position: fixed;
+  width: 28%;
+  z-index: 1;
+  top: 7%;
+  left: 3%;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.btn-group .button {
+  text-align: left;
+  background-color: white;
+  border: 0px solid green;
+  color: black;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+}
+
+.atas {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.bawah {
+  border-radius: 0px 0px 5px 5px;
+  margin-bottom: 2%;
+}
+
+.btn-group .button:hover {
+  background-color: #FFCC00;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.tombol {
+  width: 20%;
+  background-color: #FFCC00;
+  padding: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 38%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.tombol a {
+  color: black;
+  font-size: 120%;
+  text-decoration: none;
+}
+
+.tombol:hover {
+  background-color: #F8AC30;
+}
+/*# sourceMappingURL=index.css.map */
