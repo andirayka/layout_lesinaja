@@ -1,25 +1,47 @@
 <html>
 <head>
     <title>Daftar Wali Murid</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="akun.css">
 </head>
 <body>
+    <nav class="navbar">
+        <ul>
+            <li><img src="../img/main-logo.png" alt="" class="navbar-img"></li>
+        </ul>                
+        <button onclick="openNav()">☰</button>
+    </nav>
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <ul class="default-list mobile-sidebar-items" id="mobileSidebarItems">
+            <li><a href="javascript:void(0)" class="closebtn default-link" onclick="closeNav()">×</a></li>
+            <li>Beranda</li>
+            <li>Akun</li>
+            <li>Siswa</li>
+            <li>Les</li>
+            <li>Keluar</li>
+        </ul>
+    </div>
     <div class="flex-container">
         <div class="flex-item-left">
             <div class="sidenav">
                 <div class="btn-group">
-                    <button class="button atas">
-                        <table>
-                            <tr>
-                                <td style="width: 10%;"><img src="../img/icon-beranda.png" alt="" style="width: 100%;"></td>
-                                <td>Beranda</td>
-                            </tr>
-                        </table>
+                    <button class="button-logo atas">
+                        <img src="../img/main-logo.png" alt="" class="sidenav-main-img">
+                    </button>                    
+                    <button class="button">
+                        <a href="#" class="default-link">
+                            <table>
+                                <tr>
+                                    <td><img src="../img/icon-beranda.png" alt="" class="sidenav-img"></td>
+                                    <td>Beranda</td>
+                                </tr>
+                            </table>
+                        </a>
                     </button>
                     <button class="button" style="background-color: #FFCC00;">
                         <table>
                             <tr>
-                                <td style="width: 10%;"><img src="../img/icon-akun.png" alt="" style="width: 100%;"></td>
+                                <td><img src="../img/icon-akun.png" alt="" class="sidenav-img"></td>
                                 <td>Akun</td>
                             </tr>
                         </table>
@@ -27,7 +49,7 @@
                     <button class="button">
                         <table>
                             <tr>
-                                <td style="width: 10%;"><img src="../img/icon-siswa.png" alt="" style="width: 100%;"></td>
+                                <td><img src="../img/icon-siswa.png" alt="" class="sidenav-img"></td>
                                 <td>Siswa</td>
                             </tr>
                         </table>
@@ -35,7 +57,7 @@
                     <button class="button">
                         <table>
                             <tr>
-                                <td style="width: 10%;"><img src="../img/icon-les.png" alt="" style="width: 100%;"></td>
+                                <td><img src="../img/icon-les.png" alt="" class="sidenav-img"></td>
                                 <td>Les</td>
                             </tr>
                         </table>
@@ -44,7 +66,7 @@
                         <button class="button bawah">
                             <table>
                                 <tr>
-                                    <td style="width: 10%;"><img src="../img/icon-keluar.png" alt="" style="width: 100%;"></td>
+                                    <td><img src="../img/icon-keluar.png" alt="" class="sidenav-img"></td>
                                     <td>Keluar</td>
                                 </tr>
                             </table>
@@ -63,7 +85,7 @@
 
                     <label for="email">Email</label>
                     <input type="text" id="email" name="email" value="handoko@mail.com">
-                
+
                     <label for="noWA">Nomor WA</label>
                     <input type="text" id="noWA" name="noWA" value="089912345678">
 
@@ -94,7 +116,7 @@
 
                     <label for="alamat">Alamat</label>
                     <textarea id="alamat" name="alamat">Perum Graha Kuncara Blok H No.29 Kemiri , Sidoarjo, Jawa Timur, Kemiri, Kec. Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61234
-                    </textarea>                    
+                    </textarea>
 
                     <h2>Ganti Kata Sandi</h2>
 
@@ -103,7 +125,7 @@
 
                     <label for="password">Kata Sandi Baru</label>
                     <input type="password" id="password" name="password" value="Percobaanpassword">
-                    
+
                     <label for="ulangPassword">Ulangi Kata Sandi</label>
                     <input type="password" id="ulangPassword" name="ulangPassword" value="Percobaanpassword">
 
@@ -113,5 +135,17 @@
             </div>
         </div>
     </div>
+    <script>
+        function openNav() {            
+            document.getElementById("mobileSidebar").style.display = "block";
+            document.getElementById("mobileSidebarItems").style.display = "block";
+            document.getElementById("mobileSidebar").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mobileSidebar").style.display = "none";
+            document.getElementById("mobileSidebarItems").style.display = "none";
+        }
+    </script>
 </body>
 </html>
