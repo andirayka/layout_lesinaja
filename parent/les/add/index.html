@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah / Ubah Les</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item-left">
+            <div class="sidenav">
+                <div class="btn-group">
+                    <button class="button atas">
+                        <table>
+                            <tr>
+                                <td style="width: 10%;"><img src="../../../img/icon-beranda.png" alt="" style="width: 100%;"></td>
+                                <td>Beranda</td>
+                            </tr>
+                        </table>
+                    </button>
+                    <a href="../../akun/akun.html">
+                        <button class="button">
+                            <table>
+                                <tr>
+                                    <td style="width: 10%;"><img src="../../../img/icon-akun.png" alt="" style="width: 100%;"></td>
+                                    <td>Akun</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
+                    <a href="../list/index.html">
+                        <button class="button" style="background-color: #FFCC00;">
+                            <table>
+                                <tr>
+                                    <td style="width: 10%;"><img src="../../../img/icon-siswa.png" alt="" style="width: 100%;"></td>
+                                    <td>Siswa</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
+                    <button class="button">
+                        <table>
+                            <tr>
+                                <td style="width: 10%;"><img src="../../../img/icon-les.png" alt="" style="width: 100%;"></td>
+                                <td>Les</td>
+                            </tr>
+                        </table>
+                    </button>
+                    <a href="../../../login/login.html">
+                        <button class="button bawah">
+                            <table>
+                                <tr>
+                                    <td style="width: 10%;"><img src="../../../img/icon-keluar.png" alt="" style="width: 100%;"></td>
+                                    <td>Keluar</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="flex-item-right">
+            <div class="isi">
+                <form action="../list/index.html">
+                    <h1>Tambah Les</h1>
+
+                    <label for="les">Pilihan Les</label>
+                    <select name="" id="">
+                        <option value="">Pilih Les</option>
+                    </select>
+
+                    <label for="paket">Pilih Paket</label><br><br>
+                    <input type="radio" id="1" name="paket">Paket 1 (8 Pertemuan)
+                    <input type="radio" id="2" name="paket">Paket 2 (12 Pertemuan)
+                    <br><br>
+
+                    <label for="kelamin">Preferensi Jenis Kelamin Tutor</label><br><br>
+                    <input type="radio" id="1" name="kelamin">Laki-Laki
+                    <input type="radio" id="2" name="kelamin">Perempuan
+                    <input type="radio" id="3" name="kelamin">Bebas
+                    <br><br>
+
+                    <label for="jadwal">Jadwal</label><br>
+
+                    <table>
+                        <tr>
+                            <td style="width: 15%;">
+                                <label for="1">Pertemuan 1 :</label>
+                            </td>
+                            <td style="width: 70%;">
+                                <input type="text">
+                            </td>
+                            <td align="center">
+                                <a href=""><img src="../../../img/icon-edit.png" alt="" class="icon"></a>
+                            </td>
+                            <td align="center">
+                                <a href=""><img src="../../../img/icon-delete.png" alt="" class="icon"></a>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table>
+                        <tr>
+                            <td style="width: 15%;">
+                                <label for="2">Pertemuan 2 :</label>
+                            </td>
+                            <td style="width: 70%;">
+                                <input type="text">
+                            </td>
+                            <td align="center">
+                                <a href=""><img src="../../../img/icon-edit.png" alt="" class="icon"></a>
+                            </td>
+                            <td align="center">
+                                <a href=""><img src="../../../img/icon-delete.png" alt="" class="icon"></a>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table>
+                        <tr>
+                            <td style="width: 15%;">
+                                <label for="3">Pertemuan 3 :</label>
+                            </td>
+                            <td style="width: 70%;">
+                                <input type="text">
+                            </td>
+                            <td align="center">
+                                <a href=""><img src="../../../img/icon-edit.png" alt="" class="icon"></a>
+                            </td>
+                            <td align="center">
+                                <a href=""><img src="../../../img/icon-delete.png" alt="" class="icon"></a>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div class="tombol">
+                        <a href="#">+</a>
+                    </div>
+
+                    <input type="submit" value="Tambah">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
