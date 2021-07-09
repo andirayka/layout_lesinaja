@@ -42,7 +42,7 @@ input[type=submit]:hover {
     background-color: #F8AC30;
 }
 
-input[type=text],select {
+.inputan,select {
     background-color: white;
     width: 100%;
     padding: 12px 20px;
@@ -56,13 +56,13 @@ input[type=text],select {
 .isi {
     border-radius: 5px;
     padding: 1px 20px;
-    margin:{
+    margin: {
         right: 4%;
         left: 2%;
     }
     background-color: white;
     padding-left: 20px; 
-    margin:{
+    margin: {
         top: 5%;
         bottom: 5px;
     }
@@ -133,4 +133,19 @@ a {
 
 .icon {
     width: 50%;
+}
+
+.harga {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid red;
+    text-align: center;
+    font-size: xx-large;
+    margin: {
+        left: 35%;
+        right: 35%;
+    }
 }
