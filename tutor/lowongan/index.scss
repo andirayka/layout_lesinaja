@@ -27,51 +27,28 @@ body {
     padding-bottom: 5%;
 }
 
-input[type=submit] {
-    width: 100%;
-    padding: 16px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    color: white;
-    background-color: cornflowerblue;
-}
-
-input[type=submit]:hover {
-    background-color: blue;
-}
-
-.presensi {
-    background-color: cornflowerblue;
-    border-radius: 4px;
-    color: white;
-    margin: {
-        top: 6%;
-        left: 11%;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    li {
+        float: right;
+        width: 20%;
+        .presensi {
+            background-color: cornflowerblue;
+            text-decoration: none;
+            display: block;
+            border-radius: 4px;
+            padding: 15px 12px;
+            color: white;
+            text-align: center;
+        }
+        
+        .presensi:hover {
+            background-color: blue;
+        }
     }
-    padding: 15px 12px;
-    text-decoration: none;
-    text-align: center;
-    width: 100%;
-    display: block;
-}
-
-.presensi:hover {
-    background-color: blue;
-}
-
-.batal {
-    background-color: red;
-    text-decoration: none;
-    display: block;
-    border-radius: 4px;
-    padding: 15px 12px;
-    color: white;
-}
-
-.batal:hover {
-    background-color: rgb(212, 0, 0);
 }
 
 .tombol {
@@ -85,21 +62,21 @@ input[type=submit]:hover {
     text-align: center;
 }
 
-.tombol a {
-    color: black;
-    font-size: 120%;
-    text-decoration: none;
-}
-
-.tombol:hover {
-    background-color: #F8AC30;
-}
-
 .isi {
     border-radius: 5px;
     padding: 1px 20px;
     margin-right: 4%;
     margin-left: 2%;
+    h2 {
+        color: white;
+    }
+}
+
+.header {
+    padding: 2px; 
+    padding-left: 20px; 
+    margin-top: 5%; 
+    background-color: white;
 }
 
 .sidenav {
@@ -123,6 +100,9 @@ input[type=submit]:hover {
     cursor: pointer;
     width: 100%;
     display: block;
+    img {
+        width: 100%;
+    }
   }
 
 .atas {
@@ -134,6 +114,18 @@ input[type=submit]:hover {
     margin-bottom: 2%;
 }
 
+.judul {
+    background-color: cornflowerblue;
+    margin-top: 2%;
+}
+
+.konten {
+    background-color: white; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    margin-bottom: 2%;
+}
+
 .btn-group .button:hover {
     background-color: #FFCC00;
     width: 100%;
@@ -141,15 +133,4 @@ input[type=submit]:hover {
 
 a {
     text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-  
-li {
-    float: left;
 }
