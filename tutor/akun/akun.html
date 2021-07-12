@@ -1,50 +1,81 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Daftar Wali Murid</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akun Tutor</title>
     <link rel="stylesheet" href="akun.css">
 </head>
 <body>
+    <nav class="navbar">        
+        <ul>
+            <li><img src="../../img/main-logo.png" alt="" class="navbar-img"></li>
+            <li><button onclick="openNav()">☰</button></li>
+        </ul>
+    </nav>
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <ul class="default-list mobile-sidebar-items" id="mobileSidebarItems">
+            <li><a href="javascript:void(0)" class="closebtn default-link" onclick="closeNav()">×</a></li>
+            <li>Beranda</li>
+            <li>Akun</li>
+            <li>Siswa</li>
+            <li>Les</li>
+            <li>Keluar</li>
+        </ul>
+    </div>
     <div class="flex-container">
         <div class="flex-item-left">
             <div class="sidenav">
                 <div class="btn-group">
-                    <button class="button atas">
-                        <table>
-                            <tr>
-                                <td style="width: 10%;"><img src="../img/icon-beranda.png" alt="" style="width: 100%;"></td>
-                                <td>Beranda</td>
-                            </tr>
-                        </table>
+                    <button class="button-logo atas">
+                        <img src="../../img/main-logo.png" alt="" class="sidenav-main-img">
                     </button>
-                    <button class="button" style="background-color: #FFCC00;">
-                        <table>
-                            <tr>
-                                <td style="width: 10%;"><img src="../img/icon-akun.png" alt="" style="width: 100%;"></td>
-                                <td>Akun</td>
-                            </tr>
-                        </table>
-                    </button>
-                    <button class="button">
-                        <table>
-                            <tr>
-                                <td style="width: 10%;"><img src="../img/icon-lowongan.png" alt="" style="width: 100%;"></td>
-                                <td>Lowongan</td>
-                            </tr>
-                        </table>
-                    </button>
-                    <button class="button">
-                        <table>
-                            <tr>
-                                <td style="width: 10%;"><img src="../img/icon-les.png" alt="" style="width: 100%;"></td>
-                                <td>Les</td>
-                            </tr>
-                        </table>
-                    </button>
+                    <a href="#" class="default-link">
+                        <button class="button">
+                            <table>
+                                <tr>
+                                    <td><img src="../../img/icon-beranda.png" alt="" class="sidenav-img"></td>
+                                    <td>Beranda</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
+                    <a href="#" class="default-link">
+                        <button class="button" style="background-color: #FFCC00;">
+                            <table>
+                                <tr>
+                                    <td><img src="../../img/icon-akun.png" alt="" class="sidenav-img"></td>
+                                    <td>Akun</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
+                    <a href="#" class="default-link">
+                        <button class="button">
+                            <table>
+                                <tr>
+                                    <td><img src="../../img/icon-lowongan.png" alt="" class="sidenav-img"></td>
+                                    <td>Lowongan</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
+                    <a href="#" class="default-link">
+                        <button class="button">
+                            <table>
+                                <tr>
+                                    <td><img src="../../img/icon-les.png" alt="" class="sidenav-img"></td>
+                                    <td>Les</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
                     <a href="../login/login.html">
                         <button class="button bawah">
                             <table>
                                 <tr>
-                                    <td style="width: 10%;"><img src="../img/icon-keluar.png" alt="" style="width: 100%;"></td>
+                                    <td><img src="../../img/icon-keluar.png" alt="" class="sidenav-img"></td>
                                     <td>Keluar</td>
                                 </tr>
                             </table>
@@ -57,10 +88,9 @@
             <div class="isiProfil">
                 <form action="../login/login.html">
                     <h1>Akun Tutor/Pengajar</h1>
-                    
-                    <div class="flex-container">
+                    <div class="flex-header-container">
                         <div class="flex-item-left" style="margin-right: 2%;">
-                            <img src="../img/bule.jpeg" alt="" style="width: 100%;">
+                            <img src="../../img/bule.jpeg" alt="" class="sidenav-profil-img">
                         </div>
                         <div class="flex-item-right">
                             <input type="file">
@@ -73,7 +103,7 @@
 
                     <label for="email">Email</label>
                     <input type="text" id="email" name="email" value="handoko@mail.com">
-                
+
                     <label for="noWA">Nomor WA</label>
                     <input type="text" id="noWA" name="noWA" value="089912345678">
 
@@ -138,7 +168,7 @@
 
                     <label for="password">Kata Sandi Baru</label>
                     <input type="password" id="password" name="password" value="Percobaanpassword">
-                    
+
                     <label for="ulangPassword">Ulangi Kata Sandi</label>
                     <input type="password" id="ulangPassword" name="ulangPassword" value="Percobaanpassword">
 
@@ -148,5 +178,17 @@
             </div>
         </div>
     </div>
+    <script>
+        function openNav() {
+            document.getElementById("mobileSidebar").style.display = "block";
+            document.getElementById("mobileSidebarItems").style.display = "block";
+            document.getElementById("mobileSidebar").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mobileSidebar").style.display = "none";
+            document.getElementById("mobileSidebarItems").style.display = "none";
+        }
+    </script>
 </body>
 </html>
