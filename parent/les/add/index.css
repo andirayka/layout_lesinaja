@@ -31,12 +31,20 @@ input[type=submit]:hover {
   background-color: #f8ac30;
 }
 
-<<<<<<< HEAD
 input[type=text],
 select {
-=======
-.inputan, select {
->>>>>>> 28f50989924a7b27e99f9c4e1d6d405c44033078
+  background-color: white;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.inputan,
+select {
   background-color: white;
   width: 100%;
   padding: 12px 20px;
@@ -145,7 +153,19 @@ a {
   width: 50%;
 }
 
-<<<<<<< HEAD
+.harga {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid red;
+  text-align: center;
+  font-size: xx-large;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
 /* clear default styling */
 .default-link {
   text-decoration: none;
@@ -246,19 +266,3 @@ nav.navbar ul {
     margin-bottom: 5px;
   }
 }/*# sourceMappingURL=index.css.map */
-=======
-.harga {
-  width: 30%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: none;
-  border-bottom: 2px solid red;
-  text-align: center;
-  font-size: xx-large;
-  margin-left: 35%;
-  margin-right: 35%;
-}
-/*# sourceMappingURL=index.css.map */
->>>>>>> 28f50989924a7b27e99f9c4e1d6d405c44033078

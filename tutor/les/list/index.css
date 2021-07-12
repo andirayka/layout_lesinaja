@@ -3,37 +3,24 @@ body {
 }
 
 .flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 
 .flex-item-left {
-  -webkit-box-flex: 30%;
-      -ms-flex: 30%;
-          flex: 30%;
+  flex: 30%;
 }
 
 .flex-item-right {
-  -webkit-box-flex: 70%;
-      -ms-flex: 70%;
-          flex: 70%;
+  flex: 70%;
 }
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 800px) {
   .flex-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 .font {
   font-size: 120%;
   padding-bottom: 5%;
@@ -49,12 +36,10 @@ ul {
   padding: 0;
   overflow: hidden;
 }
-
 ul li {
   float: left;
   width: 20%;
 }
-
 ul li .presensi {
   background-color: cornflowerblue;
   text-decoration: none;
@@ -64,7 +49,6 @@ ul li .presensi {
   color: white;
   text-align: center;
 }
-
 ul li .presensi:hover {
   background-color: blue;
 }
@@ -96,7 +80,6 @@ ul li .presensi:hover {
   margin-right: 4%;
   margin-left: 2%;
 }
-
 .isi h2 {
   color: white;
 }
@@ -130,7 +113,6 @@ ul li .presensi:hover {
   width: 100%;
   display: block;
 }
-
 .btn-group .button img {
   width: 100%;
 }
@@ -163,5 +145,4 @@ ul li .presensi:hover {
 
 a {
   text-decoration: none;
-}
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
