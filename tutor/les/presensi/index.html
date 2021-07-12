@@ -4,9 +4,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Presensi Les Tutor</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
+    <nav class="navbar">
+        <ul>
+            <li><img src="../../../img/main-logo.png" alt="" class="navbar-img"></li>
+        </ul>                
+        <button onclick="openNav()">☰</button>
+    </nav>
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <ul class="default-list mobile-sidebar-items" id="mobileSidebarItems">
+            <li><a href="javascript:void(0)" class="closebtn default-link" onclick="closeNav()">×</a></li>
+            <li>Beranda</li>
+            <li>Akun</li>
+            <li>Siswa</li>
+            <li>Les</li>
+            <li>Keluar</li>
+        </ul>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item-left">
+            <div class="sidenav">
+                <div class="btn-group">
+                    <button class="button-logo atas">
+                        <img src="../../../img/main-logo.png" alt="" class="sidenav-main-img">
+                    </button>                    
+                    <button class="button">
+                        <a href="#" class="default-link">
+                            <table>
+                                <tr>
+                                    <td><img src="../../../img/icon-beranda.png" alt="" class="sidenav-img"></td>
+                                    <td>Beranda</td>
+                                </tr>
+                            </table>
+                        </a>
+                    </button>
+                    <button class="button" style="background-color: #FFCC00;">
+                        <table>
+                            <tr>
+                                <td><img src="../../../img/icon-akun.png" alt="" class="sidenav-img"></td>
+                                <td>Akun</td>
+                            </tr>
+                        </table>
+                    </button>
+                    <a href="../siswa/list/index.html">
+                        <button class="button">
+                            <table>
+                                <tr>
+                                    <td><img src="../../../img/icon-siswa.png" alt="" class="sidenav-img"></td>
+                                    <td>Siswa</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
+                    <button class="button">
+                        <table>
+                            <tr>
+                                <td><img src="../../../img/icon-les.png" alt="" class="sidenav-img"></td>
+                                <td>Les</td>
+                            </tr>
+                        </table>
+                    </button>
+                    <a href="../../login/login.html">
+                        <button class="button bawah">
+                            <table>
+                                <tr>
+                                    <td><img src="../../../img/icon-keluar.png" alt="" class="sidenav-img"></td>
+                                    <td>Keluar</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="flex-item-right">
+            <div class="isi judul">
+                <h1>Presensi Les Bhs. Inggris Kelas 3 SD (Sedang Berlangsung)</h1>
+            </div>
+            <div class="isi atas">
+                <h2>Rabu, 7 Juli 2021, 08:00-09:30</h2>
+            </div>
+            <div class="isi bawah">
+                <form action="#">
+                    <input type="submit" value="Ubah Jadwal">
+
+                    <h3>Rating Les</h3>
+                    <div class="rating">
+                        <div class="icon-rating">
+                            <img src="../../../img/icon-bintang-full.png" alt="">
+                            <img src="../../../img/icon-bintang-full.png" alt="">
+                            <img src="../../../img/icon-bintang-full.png" alt="">
+                            <img src="../../../img/icon-bintang.png" alt="">
+                            <img src="../../../img/icon-bintang.png" alt="">
+                        </div>
+                        <textarea rows="3">Komentar Walmur</textarea>
+                    </div>
+
+                    <h3>Data Perkembangan Siswa</h3>
+                    <div class="rating">
+                        <table>
+                            <tr>
+                                <td>Materi</td>
+                                <td class="form">
+                                    <input type="text" placeholder="Materi yang di ajar">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Laporan</td>
+                                <td class="form">
+                                    <textarea rows="3" placeholder="Laporan anda"></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                        <input type="submit" value="Simpan Laporan">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openNav() {            
+            document.getElementById("mobileSidebar").style.display = "block";
+            document.getElementById("mobileSidebarItems").style.display = "block";
+            document.getElementById("mobileSidebar").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mobileSidebar").style.display = "none";
+            document.getElementById("mobileSidebarItems").style.display = "none";
+        }
+    </script>
 </body>
 </html>
