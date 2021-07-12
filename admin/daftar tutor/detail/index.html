@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akun Tutor</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar">        
+        <ul>
+            <li><img src="../../../img/main-logo.png" alt="" class="navbar-img"></li>
+            <li><button onclick="openNav()">☰</button></li>
+        </ul>
+    </nav>
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <ul class="default-list mobile-sidebar-items" id="mobileSidebarItems">
+            <li><a href="javascript:void(0)" class="closebtn default-link" onclick="closeNav()">×</a></li>
+            <li>Beranda</li>
+            <li>Akun</li>
+            <li>Data Master</li>
+            <li>Daftar Tutor</li>
+            <li>Riwayat Pembayaran</li>
+            <li>Keluar</li>
+        </ul>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item-left">
+            <div class="sidenav">
+                <div class="btn-group">
+                    <button class="button-logo atas">
+                        <img src="../../../img/main-logo.png" alt="" class="sidenav-main-img">
+                    </button>
+                    <a href="#" class="default-link">
+                        <button class="button">
+                            <table>
+                                <tr>
+                                    <td><img src="../../../img/icon-beranda.png" alt="" class="sidenav-img"></td>
+                                    <td>Beranda</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
+                    <a href="#" class="default-link">
+                        <button class="button" style="background-color: #FFCC00;">
+                            <table>
+                                <tr>
+                                    <td><img src="../../../img/icon-akun.png" alt="" class="sidenav-img"></td>
+                                    <td>Akun</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
+                    <a href="#" class="default-link">
+                        <button class="button">
+                            <table>
+                                <tr>
+                                    <td><img src="../../../img/icon-lowongan.png" alt="" class="sidenav-img"></td>
+                                    <td>Data Master</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
+                    <a href="#" class="default-link">
+                        <button class="button">
+                            <table>
+                                <tr>
+                                    <td><img src="../../../img/icon-les.png" alt="" class="sidenav-img"></td>
+                                    <td>Daftar Tutor</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
+                    <a href="#" class="default-link">
+                        <button class="button bawah">
+                            <table>
+                                <tr>
+                                    <td><img src="../../../img/icon-keluar.png" alt="" class="sidenav-img"></td>
+                                    <td>Riwayat Pembayaran</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
+                    <a href="#" class="default-link">
+                        <button class="button bawah">
+                            <table>
+                                <tr>
+                                    <td><img src="../../../img/icon-keluar.png" alt="" class="sidenav-img"></td>
+                                    <td>Keluar</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="flex-item-right">
+            <div class="isiProfil">
+                <form action="../../login/login.html">
+                    <h1>Akun Tutor/Pengajar</h1>
+                    <div class="flex-header-container">
+                        <div class="flex-item-left" style="margin-right: 2%;">
+                            <img src="../../../img/bule.jpeg" alt="" class="sidenav-profil-img">
+                        </div>
+                        <div class="flex-item-right">
+                            <input type="file">
+                        </div>
+                    </div>
+                    <br><br>
+
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" name="nama" value="Handoko Wahyudi Waluyo Sucipto">
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" value="handoko@mail.com">
+
+                    <label for="noWA">Nomor WA</label>
+                    <input type="text" id="noWA" name="noWA" value="089912345678">
+
+                    <label for="gender">Jenis Kelamin</label><br><br>
+                    <input type="radio" id="laki" name="gender" checked="checked">Laki - laki
+                    <input type="radio" id="perempuan" name="gender">Perempuan
+                    <br><br>
+
+                    <label for="alamat">Provinsi</label>
+                    <select id="provinsi" name="provinsi" style="background-color: white; border: 1px solid #ccc;">
+                        <option>Jawa Timur</option>
+                        <option>Jawa Barat</option>
+                        <option>Jawa Tengah</option>
+                    </select>
+
+                    <label for="kabupaten">Kabupaten / Kota</label>
+                    <select id="kabupaten" name="kabupaten" style="background-color: white; border: 1px solid #ccc;">
+                        <option>Sidoarjo</option>
+                        <option>Surabaya</option>
+                        <option>Gresik</option>
+                    </select>
+
+                    <label for="kecamatan">Kecamatan</label>
+                    <select id="kecamatan" name="kecamatan" style="background-color: white; border: 1px solid #ccc;">
+                        <option>Jabon</option>
+                        <option>Prambon</option>
+                        <option>Krian</option>
+                        <option>Sidoarjo</option>
+                    </select>
+
+                    <label for="desa">Desa</label>
+                    <select id="desa" name="desa" style="background-color: white; border: 1px solid #ccc;">
+                        <option>Jabon</option>
+                        <option>Prambon</option>
+                        <option>Krian</option>
+                        <option>Sidoarjo</option>
+                    </select>
+
+                    <label for="alamat">Alamat</label>
+                    <textarea id="alamat" name="alamat">Perum Graha Kuncara Blok H No.29 Kemiri , Sidoarjo, Jawa Timur, Kemiri, Kec. Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61234
+                    </textarea>
+                    <br><br>
+
+                    <label for="perguruan">Perguruan Tinggi</label>
+                    <input type="text" id="perguruan" name="perguruan" value="Poloteknik Elektronika Surabaya">
+
+                    <label for="jurusan">Jurusan</label>
+                    <input type="text" id="jurusan" name="jurusan" value="Informatika">
+
+                    <label for="mapel">Mapel yang dikuasai</label>
+                    <select id="mapel" name="mapel" style="background-color: white; border: 1px solid #ccc;">
+                        <option>Olahraga</option>
+                        <option>Teknik</option>
+                        <option>Bahasa</option>
+                        <option>MTK</option>
+                    </select>
+
+                    <label for="pilihan">Apakah pernah memberi les atau mengajar sebelumnya?</label><br><br>
+                    <input type="radio" id="ya" name="pilihan" checked="checked">Ya
+                    <input type="radio" id="tidak" name="pilihan">Tidak
+                    <br><br>
+
+                    <label for="pengalaman">Jika pernah, sebutkan semua pengalaman mengajar yang pernah anda lakukan</label>
+                    <input type="text" id="pengalaman" name="pengalaman" value="Jalan - jalan">
+
+                    <label for="">Bank</label>
+                    <input type="text" placeholder="Masukkan nama Bank Anda">
+
+                    <label for="">Rekening</label>
+                    <input type="text" placeholder="Masukkan rekening Anda">
+
+                    <h2>Reset Kata Sandi</h2>
+
+                    <label for="password">Kata Sandi Baru</label>
+                    <input type="password" id="password" name="password" value="Percobaanpassword">
+
+                    <label for="ulangPassword">Ulangi Kata Sandi</label>
+                    <input type="password" id="ulangPassword" name="ulangPassword" value="Percobaanpassword">
+
+                    <input type="submit" value="Simpan">
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mobileSidebar").style.display = "block";
+            document.getElementById("mobileSidebarItems").style.display = "block";
+            document.getElementById("mobileSidebar").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mobileSidebar").style.display = "none";
+            document.getElementById("mobileSidebarItems").style.display = "none";
+        }
+    </script>
+</body>
+</html>
