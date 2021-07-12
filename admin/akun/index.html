@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daftar Wali Murid</title>    
-    <link rel="stylesheet" href="akun.css">
+    <title>Akun Admin</title>    
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <nav class="navbar">
@@ -19,8 +19,9 @@
             <li><a href="javascript:void(0)" class="closebtn default-link" onclick="closeNav()">×</a></li>
             <li>Beranda</li>
             <li>Akun</li>
-            <li>Siswa</li>
-            <li>Les</li>
+            <li>Data Master</li>
+            <li>Daftar Tutor</li>
+            <li>Riwayat Pembayaran</li>
             <li>Keluar</li>
         </ul>
     </div>
@@ -53,8 +54,8 @@
                         <button class="button">
                             <table>
                                 <tr>
-                                    <td><img src="../../img/icon-siswa.png" alt="" class="sidenav-img"></td>
-                                    <td>Siswa</td>
+                                    <td><img src="../../img/icon-lowongan.png" alt="" class="sidenav-img"></td>
+                                    <td>Data Master</td>
                                 </tr>
                             </table>
                         </button>
@@ -63,10 +64,20 @@
                         <table>
                             <tr>
                                 <td><img src="../../img/icon-les.png" alt="" class="sidenav-img"></td>
-                                <td>Les</td>
+                                <td>Daftar Tutor</td>
                             </tr>
                         </table>
                     </button>
+                    <a href="#">
+                        <button class="button bawah">
+                            <table>
+                                <tr>
+                                    <td><img src="../../img/icon-keluar.png" alt="" class="sidenav-img"></td>
+                                    <td>Riwayat Pembayaran</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
                     <a href="../../login/login.html">
                         <button class="button bawah">
                             <table>
@@ -83,52 +94,10 @@
         <div class="flex-item-right">
             <div class="isiProfil">
                 <form action="../login/login.html">
-                    <h1>Akun Wali Murid</h1>
+                    <h1>Akun Administrator</h1>
 
                     <label for="nama">Nama</label>
                     <input type="text" id="nama" name="nama" value="Handoko Wahyudi Waluyo Sucipto">
-
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email" value="handoko@mail.com">
-
-                    <label for="noWA">Nomor WA</label>
-                    <input type="text" id="noWA" name="noWA" value="089912345678">
-
-                    <label for="pekerjaan">Pekerjaan</label>
-                    <input type="text" id="pekerjaan" name="pekerjaan" value="Jalan-jalan">
-
-                    <label for="alamat">Provinsi</label>
-                    <select id="provinsi" name="provinsi" style="background-color: white; border: 1px solid #ccc;">
-                        <option>Jawa Timur</option>
-                        <option>Jawa Barat</option>
-                        <option>Jawa Tengah</option>
-                    </select>
-
-                    <label for="kabupaten">Kabupaten / Kota</label>
-                    <select id="kabupaten" name="kabupaten" style="background-color: white; border: 1px solid #ccc;">
-                        <option>Sidoarjo</option>
-                        <option>Surabaya</option>
-                        <option>Gresik</option>
-                    </select>
-
-                    <label for="kecamatan">Kecamatan</label>
-                    <select id="kecamatan" name="provinsi" style="background-color: white; border: 1px solid #ccc;">
-                        <option>Jabon</option>
-                        <option>Prambon</option>
-                        <option>Krian</option>
-                        <option>Sidoarjo</option>
-                    </select>
-
-                    <label for="desa">Desa</label>
-                    <select id="desa" name="desa" style="background-color: white; border: 1px solid #ccc;">
-                        <option>pasanan</option>
-                        <option>wonoplintahan</option>
-                        <option>semengko</option>
-                    </select>
-
-                    <label for="alamat">Alamat</label>
-                    <textarea id="alamat" name="alamat" rows="4">Perum Graha Kuncara Blok H No.29 Kemiri , Sidoarjo, Jawa Timur, Kemiri, Kec. Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61234
-                    </textarea>
 
                     <input type="submit" value="Simpan">
 
