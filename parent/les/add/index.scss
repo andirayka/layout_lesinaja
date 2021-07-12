@@ -35,6 +35,7 @@ input[type="submit"]:hover {
   background-color: #f8ac30;
 }
 
+<<<<<<< HEAD
 input[type="text"],
 select {
   background-color: white;
@@ -60,6 +61,32 @@ select {
     top: 5%;
     bottom: 5px;
   }
+=======
+.inputan,select {
+    background-color: white;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.isi {
+    border-radius: 5px;
+    padding: 1px 20px;
+    margin: {
+        right: 4%;
+        left: 2%;
+    }
+    background-color: white;
+    padding-left: 20px; 
+    margin: {
+        top: 5%;
+        bottom: 5px;
+    }
+>>>>>>> 28f50989924a7b27e99f9c4e1d6d405c44033078
 }
 
 .sidenav {
@@ -146,6 +173,7 @@ a {
 }
 
 .icon {
+<<<<<<< HEAD
   width: 50%;
 }
 
@@ -252,3 +280,22 @@ nav.navbar ul {
     }
   }
 }
+=======
+    width: 50%;
+}
+
+.harga {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid red;
+    text-align: center;
+    font-size: xx-large;
+    margin: {
+        left: 35%;
+        right: 35%;
+    }
+}
+>>>>>>> 28f50989924a7b27e99f9c4e1d6d405c44033078
