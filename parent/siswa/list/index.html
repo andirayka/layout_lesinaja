@@ -10,128 +10,161 @@
 </head>
 
 <body>
-<div class="flex-container">
-    <div class="flex-item-left">
-        <div class="sidenav">
-            <div class="btn-group">
-                <button class="button atas">
-                    <table>
-                        <tr>
-                            <td style="width: 10%;"><img src="../../../img/icon-beranda.png" alt="" style="width: 100%;"></td>
-                            <td>Beranda</td>
-                        </tr>
-                    </table>
-                </button>
-                <a href="../../akun/akun.html">
+    <nav class="navbar">
+        <ul>
+            <li><img src="../../../img/main-logo.png" alt="" class="navbar-img"></li>
+            <li style="float: right;"><button onclick="openNav()">☰</button></li>
+        </ul>
+    </nav>
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <ul class="default-list mobile-sidebar-items" id="mobileSidebarItems">
+            <li><a href="javascript:void(0)" class="closebtn default-link" onclick="closeNav()" style="color: #000;">×</a></li>
+            <li>Beranda</li>
+            <li>Akun</li>
+            <li>Siswa</li>
+            <li>Les</li>
+            <li>Keluar</li>
+        </ul>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item-left">
+            <div class="sidenav">
+                <div class="btn-group">
+                    <button class="button-logo atas">
+                        <img src="../../../img/main-logo.png" alt="" class="sidenav-main-img">
+                    </button>
                     <button class="button">
                         <table>
                             <tr>
-                                <td style="width: 10%;"><img src="../../../img/icon-akun.png" alt="" style="width: 100%;"></td>
-                                <td>Akun</td>
+                                <td><img src="../../../img/icon-beranda.png" alt="" class="sidenav-img"></td>
+                                <td>Beranda</td>
                             </tr>
                         </table>
                     </button>
-                </a>
-                <button class="button" style="background-color: #FFCC00;">
-                    <table>
-                        <tr>
-                            <td style="width: 10%;"><img src="../../../img/icon-siswa.png" alt="" style="width: 100%;"></td>
-                            <td>Siswa</td>
-                        </tr>
-                    </table>
-                </button>
-                <button class="button">
-                    <table>
-                        <tr>
-                            <td style="width: 10%;"><img src="../../../img/icon-les.png" alt="" style="width: 100%;"></td>
-                            <td>Les</td>
-                        </tr>
-                    </table>
-                </button>
-                <a href="../../../login/login.html">
-                    <button class="button bawah">
+                    <a href="../../akun/akun.html">
+                        <button class="button">
+                            <table>
+                                <tr>
+                                    <td><img src="../../../img/icon-akun.png" alt="" class="sidenav-img"></td>
+                                    <td>Akun</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
+                    <a href="../list/index.html">
+                        <button class="button" style="background-color: #FFCC00;">
+                            <table>
+                                <tr>
+                                    <td><img src="../../../img/icon-siswa.png" alt="" class="sidenav-img"></td>
+                                    <td>Siswa</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
+                    <button class="button">
                         <table>
                             <tr>
-                                <td style="width: 10%;"><img src="../../../img/icon-keluar.png" alt="" style="width: 100%;"></td>
-                                <td>Keluar</td>
+                                <td><img src="../../../img/icon-les.png" alt="" class="sidenav-img"></td>
+                                <td>Les</td>
                             </tr>
                         </table>
                     </button>
-                </a>
+                    <a href="../../../login/login.html">
+                        <button class="button bawah">
+                            <table>
+                                <tr>
+                                    <td><img src="../../../img/icon-keluar.png" alt="" class="sidenav-img"></td>
+                                    <td>Keluar</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
+                </div>
             </div>
         </div>
+        <div class="flex-item-right">
+            <div class="header">
+                <h1>Daftar Siswa</h1>
+            </div>
+
+            <div class="tombol">
+                <a href="../add/index.html">Tambah Siswa</a>
+            </div>
+
+            <div class="isi atas" style="background-color: cornflowerblue;">
+                <h2 style="color: white;">Fiqri Aidin Prasetyo</h2>
+            </div>
+
+            <div class="isi bawah" style="background-color: white; padding-top: 20px; padding-bottom: 20px; margin-bottom: 2%;">
+                <form action="../add/index.html">
+                    <table>
+                        <tr>
+                            <td class="font">Jenjang Kelas</td>
+                            <td class="font">: 6 SD</td>
+                        </tr>
+                        <tr>
+                            <td class="font">Nama Sekolah</td>
+                            <td class="font">: SDN 1 Indonesia</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="submit" value="Ubah Data" class="update">
+                            </td>
+                            <td></td>
+                            <td>
+                                <a href="#" style="text-decoration: none;" class="delete">Hapus Siswa</a>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            <div class="isi atas" style="background-color: cornflowerblue;">
+                <h2 style="color: white;">Fiqri Aidin Prasetyo</h2>
+            </div>
+
+            <div class="isi bawah" style="background-color: white; padding-top: 20px; padding-bottom: 20px; margin-bottom: 2%;">
+                <form action="../add/index.html">
+                    <table>
+                        <tr>
+                            <td class="font">Jenjang Kelas</td>
+                            <td class="font">: 6 SD</td>
+                        </tr>
+                        <tr>
+                            <td class="font">Nama Sekolah</td>
+                            <td class="font">: SDN 1 Indonesia</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="submit" value="Ubah Data" class="update">
+                            </td>
+                            <td></td>
+                            <td>
+                                <a href="#" style="text-decoration: none;"><button class="delete">Hapus Siswa</button></a>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+        </div>
     </div>
-    <div class="flex-item-right">
-        <div class="isi" style="padding: 2px; padding-left: 20px; margin-top: 5%; background-color: white;">
-            <h1>Daftar Siswa</h1>
-        </div>
+    <script>
+        function openNav() {            
+            document.getElementById("mobileSidebar").style.display = "block";
+            document.getElementById("mobileSidebarItems").style.display = "block";
+            document.getElementById("mobileSidebar").style.width = "100%";
+        }
 
-        <div class="tombol">
-            <a href="../add/index.html">Tambah Siswa</a>
-        </div>
-
-        <div class="isi atas" style="background-color: cornflowerblue;">
-            <h2 style="color: white;">Fiqri Aidin Prasetyo</h2>
-        </div>
-
-        <div class="isi bawah" style="background-color: white; padding-top: 20px; padding-bottom: 20px; margin-bottom: 2%;">
-            <form action="../add/index.html">
-                <table>
-                    <tr>
-                        <td class="font">Jenjang Kelas</td>
-                        <td class="font">: 6 SD</td>
-                    </tr>
-                    <tr>
-                        <td class="font">Nama Sekolah</td>
-                        <td class="font">: SDN 1 Indonesia</td>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td>
-                            <input type="submit" value="Ubah Data" class="update">
-                        </td>
-                        <td></td>
-                        <td>
-                            <a href="#" style="text-decoration: none;" class="delete">Hapus Siswa</a>
-                        </td>
-                    </tr>
-                </table>
-            </form>
-        </div>
-
-        <div class="isi atas" style="background-color: cornflowerblue;">
-            <h2 style="color: white;">Fiqri Aidin Prasetyo</h2>
-        </div>
-
-        <div class="isi bawah" style="background-color: white; padding-top: 20px; padding-bottom: 20px; margin-bottom: 2%;">
-            <form action="../add/index.html">
-                <table>
-                    <tr>
-                        <td class="font">Jenjang Kelas</td>
-                        <td class="font">: 6 SD</td>
-                    </tr>
-                    <tr>
-                        <td class="font">Nama Sekolah</td>
-                        <td class="font">: SDN 1 Indonesia</td>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td>
-                            <input type="submit" value="Ubah Data" class="update">
-                        </td>
-                        <td></td>
-                        <td>
-                            <a href="#" style="text-decoration: none;"><button class="delete">Hapus Siswa</button></a>
-                        </td>
-                    </tr>
-                </table>
-            </form>
-        </div>
-
-    </div>
-</div>
+        function closeNav() {
+            document.getElementById("mobileSidebar").style.display = "none";
+            document.getElementById("mobileSidebarItems").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>

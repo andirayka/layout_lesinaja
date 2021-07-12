@@ -15,6 +15,17 @@ body {
   flex: 70%;
 }
 
+.header {
+  border-radius: 5px;
+  padding: 1px 20px;
+  margin-right: 4%;
+  margin-left: 2%;
+  padding: 2px;
+  padding-left: 20px;
+  margin-top: 5%;
+  background-color: white;
+}
+
 .font {
   font-size: 120%;
   padding-bottom: 5%;
@@ -35,16 +46,22 @@ input[type=submit]:hover {
   background-color: blue;
 }
 
+.card-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 .presensi {
   background-color: cornflowerblue;
   border-radius: 4px;
   color: white;
-  margin-top: 6%;
-  margin-left: 11%;
-  padding: 15px 12px;
+  margin-right: 1em;
+  padding: 1em 1em;
   text-decoration: none;
   text-align: center;
-  width: 100%;
+  width: 20%;
   display: block;
 }
 
@@ -57,7 +74,7 @@ input[type=submit]:hover {
   text-decoration: none;
   display: block;
   border-radius: 4px;
-  padding: 15px 12px;
+  padding: 1em 1em;
   color: white;
 }
 
@@ -103,6 +120,26 @@ input[type=submit]:hover {
   padding: 8px 0;
 }
 
+.sidenav-main-img {
+  width: 100%;
+  height: auto;
+}
+
+.sidenav-img {
+  width: 1.5em;
+}
+
+.button-logo {
+  text-align: left;
+  background-color: white;
+  border: 0px solid green;
+  color: black;
+  padding: 1em 1em;
+  font-size: 16px;
+  width: 100%;
+  display: block;
+}
+
 .btn-group .button {
   text-align: left;
   background-color: white;
@@ -134,21 +171,9 @@ a {
   text-decoration: none;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-li {
-  float: left;
-}
-
 /* clear default styling */
 .default-link {
   text-decoration: none;
-  color: #000;
 }
 
 .default-list {
@@ -192,7 +217,7 @@ nav.navbar {
   overflow: auto;
 }
 
-nav.navbar button {
+nav.navbar li button {
   float: right;
   padding: 1em;
   font-size: 1em;
@@ -240,7 +265,7 @@ nav.navbar ul {
     display: block;
   }
 
-  .isiProfil {
-    margin-top: 15%;
+  .header {
+    margin-top: 4em;
   }
 }/*# sourceMappingURL=index.css.map */
