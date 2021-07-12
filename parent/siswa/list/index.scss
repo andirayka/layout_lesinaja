@@ -13,34 +13,58 @@ body {
 
 .flex-item-right {
     flex: 70%;
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        li {
-            float: right;
-            width: 20%;
-            .presensi {
-                background-color: cornflowerblue;
-                text-decoration: none;
-                display: block;
-                border-radius: 4px;
-                padding: 15px 12px;
-                color: white;
-                text-align: center;
-            }
+}
 
-            .presensi:hover {
-                background-color: blue;
-            }
-        }
-    }
+.header {
+  border-radius: 5px;
+  padding: 1px 20px;
+  margin-right: 4%;
+  margin-left: 2%;
+  padding: 2px; 
+  padding-left: 20px; 
+  margin-top: 5%; 
+  background-color: white;
 }
 
 .font {
     font-size: 120%;
     padding-bottom: 5%;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.update {
+    background-color: cornflowerblue;
+}
+
+.delete {
+    background-color: #ff0000;
+    border: 0px solid green;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 12px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+}
+
+.update:hover {
+    background-color: blue;
+}
+
+.delete:hover {
+    background-color: rgb(131, 4, 4);
 }
 
 .tombol {
@@ -54,21 +78,21 @@ body {
     text-align: center;
 }
 
+.tombol a {
+    color: black;
+    font-size: 120%;
+    text-decoration: none;
+}
+
+.tombol:hover {
+    background-color: #f8ac30;
+}
+
 .isi {
     border-radius: 5px;
     padding: 1px 20px;
     margin-right: 4%;
     margin-left: 2%;
-    h2 {
-        color: white;
-    }
-}
-
-.header {
-    padding: 2px;
-    padding-left: 20px;
-    margin-top: 5%;
-    background-color: white;
 }
 
 .sidenav {
@@ -90,10 +114,6 @@ body {
     width: 1.5em;
 }
 
-.sidenav-profil-img {
-    width: 100%;
-}
-
 .btn-group .button {
     text-align: left;
     background-color: white;
@@ -105,12 +125,9 @@ body {
     cursor: pointer;
     width: 100%;
     display: block;
-    // img {
-    //     width: 100%;
-    // }
 }
 
-.btn-group .button-logo {
+.button-logo {
     text-align: left;
     background-color: white;
     border: 0px solid green;
@@ -130,18 +147,6 @@ body {
     margin-bottom: 2%;
 }
 
-.judul {
-    background-color: cornflowerblue;
-    margin-top: 2%;
-}
-
-.konten {
-    background-color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 2%;
-}
-
 .btn-group .button:hover {
     background-color: #ffcc00;
     width: 100%;
@@ -151,7 +156,6 @@ a {
     text-decoration: none;
 }
 
-/* clear default styling */
 .default-list {
     list-style-type: none;
 }
@@ -193,7 +197,7 @@ nav.navbar {
     overflow: auto;
 }
 
-nav.navbar button {
+nav.navbar li button {
     float: right;
     padding: 1em;
     font-size: 1em;

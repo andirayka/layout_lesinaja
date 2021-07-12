@@ -10,133 +10,155 @@
 </head>
 
 <body>
-<div class="flex-container">
-    <div class="flex-item-left">
-        <div class="sidenav">
-            <div class="btn-group">
-                <button class="button atas">
-                    <table>
-                        <tr>
-                            <td style="width: 10%;"><img src="../../../img/icon-beranda.png" alt="" style="width: 100%;"></td>
-                            <td>Beranda</td>
-                        </tr>
-                    </table>
-                </button>
-                <a href="../../akun/akun.html">
+    <nav class="navbar">
+        <ul>
+            <li><img src="../../../img/main-logo.png" alt="" class="navbar-img"></li>
+            <li style="float: right;"><button onclick="openNav()">☰</button></li>
+        </ul>
+    </nav>
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <ul class="default-list mobile-sidebar-items" id="mobileSidebarItems">
+            <li><a href="javascript:void(0)" class="closebtn default-link" onclick="closeNav()" style="color: #000;">×</a></li>
+            <li>Beranda</li>
+            <li>Akun</li>
+            <li>Siswa</li>
+            <li>Les</li>
+            <li>Keluar</li>
+        </ul>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item-left">
+            <div class="sidenav">
+                <div class="btn-group">
+                    <button class="button-logo atas">
+                        <img src="../../../img/main-logo.png" alt="" class="sidenav-main-img">
+                    </button>
                     <button class="button">
                         <table>
                             <tr>
-                                <td style="width: 10%;"><img src="../../../img/icon-akun.png" alt="" style="width: 100%;"></td>
-                                <td>Akun</td>
+                                <td><img src="../../../img/icon-beranda.png" alt="" class="sidenav-img"></td>
+                                <td>Beranda</td>
                             </tr>
                         </table>
                     </button>
-                </a>
-                <a href="../../siswa/list/index.html">
-                    <button class="button">
+                    <a href="../../akun/akun.html">
+                        <button class="button">
+                            <table>
+                                <tr>
+                                    <td><img src="../../../img/icon-akun.png" alt="" class="sidenav-img"></td>
+                                    <td>Akun</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
+                    <a href="../list/index.html">
+                        <button class="button">
+                            <table>
+                                <tr>
+                                    <td><img src="../../../img/icon-siswa.png" alt="" class="sidenav-img"></td>
+                                    <td>Siswa</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
+                    <button class="button"  style="background-color: #FFCC00;">
                         <table>
                             <tr>
-                                <td style="width: 10%;"><img src="../../../img/icon-siswa.png" alt="" style="width: 100%;"></td>
-                                <td>Siswa</td>
+                                <td><img src="../../../img/icon-les.png" alt="" class="sidenav-img"></td>
+                                <td>Les</td>
                             </tr>
                         </table>
                     </button>
-                </a>
-                <button class="button" style="background-color: #FFCC00;">
+                    <a href="../../../login/login.html">
+                        <button class="button bawah">
+                            <table>
+                                <tr>
+                                    <td><img src="../../../img/icon-keluar.png" alt="" class="sidenav-img"></td>
+                                    <td>Keluar</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="flex-item-right">
+            <div class="header">
+                <h1>Daftar Les yang Anda Ikuti</h1>
+            </div>
+
+            <div class="tombol">
+                <a href="../add/index.html">Tambah Les</a>
+            </div>
+
+            <div class="isi atas" style="background-color: cornflowerblue;">
+                <h2 style="color: white;">Bhs. Inggris Kelas 3 SD (Sedang Diumumkan)</h2>
+            </div>
+
+            <div class="isi bawah" style="background-color: white; padding-top: 20px; padding-bottom: 20px; margin-bottom: 2%;">
+                <form action="#">
                     <table>
                         <tr>
-                            <td style="width: 10%;"><img src="../../../img/icon-les.png" alt="" style="width: 100%;"></td>
-                            <td>Les</td>
+                            <td class="font">Tutor</td>
+                            <td class="font">: Hamidah S.Kom.</td>
+                        </tr>
+                        <tr>
+                            <td class="font">Siswa</td>
+                            <td class="font">: Intan Kusumastuti</td>
+                        </tr>
+                        <tr>
+                            <td class="font">Jadwal Les</td>
+                            <td class="font">: Senin 08:00-09:30, Selasa 10:00-11:30, Jumat: 15:30-17:00</td>
+                        </tr>
+
+                    </table>
+                    <div class="card-button-container">
+                        <a href="#" class="presensi default-link">Presensi Les</a>
+                        <a href="#" class="batal default-link">Batalkan Les</a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="isi atas" style="background-color: cornflowerblue;">
+                <h2 style="color: white;">Bhs. Inggris Kelas 3 SD (Sedang Diumumkan)</h2>
+            </div>
+
+            <div class="isi bawah" style="background-color: white; padding-top: 20px; padding-bottom: 20px; margin-bottom: 2%;">
+                <form action="#">
+                    <table>
+                        <tr>
+                            <td class="font">Tutor</td>
+                            <td class="font">: Hamidah S.Kom.</td>
+                        </tr>
+                        <tr>
+                            <td class="font">Siswa</td>
+                            <td class="font">: Intan Kusumastuti</td>
+                        </tr>
+                        <tr>
+                            <td class="font">Jadwal Les</td>
+                            <td class="font">: Senin 08:00-09:30, Selasa 10:00-11:30, Jumat: 15:30-17:00</td>
                         </tr>
                     </table>
-                </button>
-                <a href="../../../login/login.html">
-                    <button class="button bawah">
-                        <table>
-                            <tr>
-                                <td style="width: 10%;"><img src="../../../img/icon-keluar.png" alt="" style="width: 100%;"></td>
-                                <td>Keluar</td>
-                            </tr>
-                        </table>
-                    </button>
-                </a>
+                    <div class="card-button-container">
+                        <a href="#" class="presensi default-link">Presensi Les</a>
+                        <a href="#" class="batal default-link">Batalkan Les</a>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-    <div class="flex-item-right">
-        <div class="isi" style="padding: 2px; padding-left: 20px; margin-top: 5%; background-color: white;">
-            <h1>Daftar Les yang Anda Ikuti</h1>
-        </div>
+    <script>
+        function openNav() {
+            document.getElementById("mobileSidebar").style.display = "block";
+            document.getElementById("mobileSidebarItems").style.display = "block";
+            document.getElementById("mobileSidebar").style.width = "100%";
+        }
 
-        <div class="tombol">
-            <a href="../add/index.html">Tambah Les</a>
-        </div>
-
-        <div class="isi atas" style="background-color: cornflowerblue;">
-            <h2 style="color: white;">Bhs. Inggris Kelas 3 SD (Sedang Diumumkan)</h2>
-        </div>
-
-        <div class="isi bawah" style="background-color: white; padding-top: 20px; padding-bottom: 20px; margin-bottom: 2%;">
-            <form action="#">
-                <table>
-                    <tr>
-                        <td class="font">Tutor</td>
-                        <td class="font">: Hamidah S.Kom.</td>
-                    </tr>
-                    <tr>
-                        <td class="font">Siswa</td>
-                        <td class="font">: Intan Kusumastuti</td>
-                    </tr>
-                    <tr>
-                        <td class="font">Jadwal Les</td>
-                        <td class="font">: Senin 08:00-09:30, Selasa 10:00-11:30, Jumat: 15:30-17:00</td>
-                    </tr>
-
-                </table>
-                <ul>
-                    <li>
-                        <a href="#" style="text-decoration: none;" class="presensi">Presensi Les</a>
-                    </li>
-                    <li style="float: right;">
-                        <a href="#" style="text-decoration: none;" class="batal">Batalkan Les</a>
-                    </li>
-                </ul>
-            </form>
-        </div>
-
-        <div class="isi atas" style="background-color: cornflowerblue;">
-            <h2 style="color: white;">Bhs. Inggris Kelas 3 SD (Sedang Diumumkan)</h2>
-        </div>
-
-        <div class="isi bawah" style="background-color: white; padding-top: 20px; padding-bottom: 20px; margin-bottom: 2%;">
-            <form action="#">
-                <table>
-                    <tr>
-                        <td class="font">Tutor</td>
-                        <td class="font">: Hamidah S.Kom.</td>
-                    </tr>
-                    <tr>
-                        <td class="font">Siswa</td>
-                        <td class="font">: Intan Kusumastuti</td>
-                    </tr>
-                    <tr>
-                        <td class="font">Jadwal Les</td>
-                        <td class="font">: Senin 08:00-09:30, Selasa 10:00-11:30, Jumat: 15:30-17:00</td>
-                    </tr>
-                </table>
-                <ul>
-                    <li>
-                        <a href="#" style="text-decoration: none;" class="presensi">Presensi Les</a>
-                    </li>
-                    <li style="float: right;">
-                        <a href="#" style="text-decoration: none;" class="batal">Batalkan Les</a>
-                    </li>
-                </ul>
-            </form>
-        </div>
-
-    </div>
-</div>
+        function closeNav() {
+            document.getElementById("mobileSidebar").style.display = "none";
+            document.getElementById("mobileSidebarItems").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
