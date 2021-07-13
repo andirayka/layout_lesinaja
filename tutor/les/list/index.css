@@ -2,6 +2,10 @@ body {
   background-color: #2D9A3F;
 }
 
+.font-color a {
+  color: black;
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -26,6 +30,8 @@ body {
 }
 .flex-item-right ul li .presensi {
   background-color: cornflowerblue;
+  border: 0px ;
+  cursor: pointer;
   text-decoration: none;
   display: block;
   border-radius: 4px;
