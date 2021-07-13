@@ -180,6 +180,10 @@ a {
   display: none;
 }
 
+.font-color a {
+  color: black;
+}
+
 .mobile-sidebar-items {
   line-height: 150%;
   font-size: 2em;

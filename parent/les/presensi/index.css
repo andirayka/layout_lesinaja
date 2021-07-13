@@ -91,7 +91,7 @@ body {
 .flex-item-right .atas {
   margin-top: 3%;
   border-radius: 5px 5px 0px 0px;
-  background-color: #6cc5e0;
+  background-color: cornflowerblue;
   color: white;
 }
 .flex-item-right .bawah {
@@ -139,7 +139,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
   color: black;
-  background-color: #6cc5e0;
+  background-color: cornflowerblue;
   font-size: 1em;
 }
 .flex-item-right .rating .button-rating:hover {
@@ -178,6 +178,10 @@ a {
   z-index: 10;
   background-color: #ffcc00;
   display: none;
+}
+
+.font-color a {
+  color: black;
 }
 
 .mobile-sidebar-items {
