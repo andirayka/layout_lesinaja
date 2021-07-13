@@ -3,59 +3,28 @@ body {
 }
 
 .flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 
 .flex-item-left {
-  -webkit-box-flex: 30%;
-      -ms-flex: 30%;
-          flex: 30%;
+  flex: 30%;
 }
 
 .flex-item-right {
-  -webkit-box-flex: 70%;
-      -ms-flex: 70%;
-          flex: 70%;
+  flex: 70%;
 }
-
-/* Responsive layout - makes a one column-layout instead of two-column layout */
-@media (max-width: 800px) {
-  .flex-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-.font {
-  font-size: 120%;
-  padding-bottom: 5%;
-}
-
-input[type=submit]:hover {
-  background-color: blue;
-}
-
-ul {
+.flex-item-right ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
-
-ul li {
+.flex-item-right ul li {
   float: left;
   width: 20%;
 }
-
-ul li .presensi {
+.flex-item-right ul li .presensi {
   background-color: cornflowerblue;
   text-decoration: none;
   display: block;
@@ -64,8 +33,16 @@ ul li .presensi {
   color: white;
   text-align: center;
 }
+.flex-item-right ul li .presensi:hover {
+  background-color: blue;
+}
 
-ul li .presensi:hover {
+.font {
+  font-size: 120%;
+  padding-bottom: 5%;
+}
+
+input[type=submit]:hover {
   background-color: blue;
 }
 
@@ -96,7 +73,6 @@ ul li .presensi:hover {
   margin-right: 4%;
   margin-left: 2%;
 }
-
 .isi h2 {
   color: white;
 }
@@ -118,6 +94,26 @@ ul li .presensi:hover {
   padding: 8px 0;
 }
 
+.sidenav-main-img {
+  width: 100%;
+  height: auto;
+}
+
+.sidenav-imgs {
+  width: 1.5em;
+}
+
+.button-logo {
+  text-align: left;
+  background-color: white;
+  border: 0px solid green;
+  color: black;
+  padding: 1em 1em;
+  font-size: 16px;
+  width: 100%;
+  display: block;
+}
+
 .btn-group .button {
   text-align: left;
   background-color: white;
@@ -130,7 +126,6 @@ ul li .presensi:hover {
   width: 100%;
   display: block;
 }
-
 .btn-group .button img {
   width: 100%;
 }
@@ -164,4 +159,102 @@ ul li .presensi:hover {
 a {
   text-decoration: none;
 }
-/*# sourceMappingURL=index.css.map */
+
+/* clear default styling */
+.default-link {
+  text-decoration: none;
+}
+
+.default-list {
+  list-style-type: none;
+}
+
+/* mobile sidebar collapse button */
+.closebtn {
+  float: right;
+  margin: 0 50%;
+  font-size: 1.5em;
+}
+
+/* mobile sidebar */
+.mobile-sidebar {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #ffcc00;
+  display: none;
+}
+
+.mobile-sidebar-items {
+  line-height: 150%;
+  font-size: 2em;
+  display: none;
+}
+
+/* navbar */
+nav.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffcc00;
+  overflow: auto;
+}
+
+nav.navbar li button {
+  float: right;
+  padding: 1em;
+  font-size: 1em;
+  background-color: #ffcc00;
+  border: none;
+}
+
+nav.navbar .navbar-img {
+  float: left;
+  width: 9em;
+}
+
+nav.navbar button:hover {
+  background-color: #f8ac30;
+}
+
+nav.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* responsive layout */
+/* desktop */
+@media screen and (min-width: 769px) and (max-width: 2000px) {
+  .flex-container {
+    flex-direction: row;
+  }
+
+  nav.navbar {
+    display: none;
+  }
+}
+/* mobile */
+@media screen and (min-width: 200px) and (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .flex-item-left .sidenav {
+    display: none;
+  }
+
+  nav.navbar {
+    display: block;
+  }
+
+  .header {
+    margin-top: 4em;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -13,28 +13,29 @@ body {
 
 .flex-item-right {
   flex: 70%;
-}
-.flex-item-right ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-.flex-item-right ul li {
-  float: right;
-  width: 20%;
-}
-.flex-item-right ul li .presensi {
-  background-color: cornflowerblue;
-  text-decoration: none;
-  display: block;
-  border-radius: 4px;
-  padding: 15px 12px;
-  color: white;
-  text-align: center;
-}
-.flex-item-right ul li .presensi:hover {
-  background-color: blue;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    li {
+      float: left;
+      width: 20%;
+      .lihat-detail {
+        background-color: cornflowerblue;
+        text-decoration: none;
+        display: block;
+        border-radius: 4px;
+        padding: 15px 12px;
+        color: white;
+        text-align: center;
+      }
+
+      .lihat-detail:hover {
+        background-color: blue;
+      }
+    }
+  }
 }
 
 .font {
@@ -58,9 +59,9 @@ body {
   padding: 1px 20px;
   margin-right: 4%;
   margin-left: 2%;
-}
-.isi h2 {
-  color: white;
+  h2 {
+    color: white;
+  }
 }
 
 .header {
@@ -104,6 +105,9 @@ body {
   cursor: pointer;
   width: 100%;
   display: block;
+  // img {
+  //     width: 100%;
+  // }
 }
 
 .btn-group .button-logo {
@@ -157,6 +161,7 @@ a {
   float: right;
   margin: 0 50%;
   font-size: 1.5em;
+  color: #000;
 }
 
 /* mobile sidebar */
@@ -212,6 +217,47 @@ nav.navbar ul {
   padding: 0;
 }
 
+/* search bar */
+.search-container {
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  padding: 1px 20px;
+  margin-right: 4%;
+  margin-left: 2%;
+  padding: 2px;
+  padding-left: 20px;
+  margin-top: 2%;
+  background-color: white;
+  opacity: 0.5;
+}
+
+.search-bar-img {
+  width: 2em;
+  height: fit-content;
+  margin-top: 0.8em;
+  opacity: 0.5;
+}
+
+ .filter-img {
+  margin-right: 1em;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+}
+
 /* responsive layout */
 /* desktop */
 @media screen and (min-width: 769px) and (max-width: 2000px) {
@@ -223,6 +269,7 @@ nav.navbar ul {
     display: none;
   }
 }
+
 /* mobile */
 @media screen and (min-width: 200px) and (max-width: 768px) {
   .flex-container {
@@ -240,4 +287,4 @@ nav.navbar ul {
   .header {
     margin-top: 4em;
   }
-}/*# sourceMappingURL=index.css.map */
+}

@@ -21,10 +21,10 @@ body {
   overflow: hidden;
 }
 .flex-item-right ul li {
-  float: right;
+  float: left;
   width: 20%;
 }
-.flex-item-right ul li .presensi {
+.flex-item-right ul li .lihat-detail {
   background-color: cornflowerblue;
   text-decoration: none;
   display: block;
@@ -33,7 +33,7 @@ body {
   color: white;
   text-align: center;
 }
-.flex-item-right ul li .presensi:hover {
+.flex-item-right ul li .lihat-detail:hover {
   background-color: blue;
 }
 
@@ -157,6 +157,7 @@ a {
   float: right;
   margin: 0 50%;
   font-size: 1.5em;
+  color: #000;
 }
 
 /* mobile sidebar */
@@ -210,6 +211,49 @@ nav.navbar ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+/* search bar */
+.search-container {
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  padding: 1px 20px;
+  margin-right: 4%;
+  margin-left: 2%;
+  padding: 2px;
+  padding-left: 20px;
+  margin-top: 2%;
+  background-color: white;
+  opacity: 0.5;
+}
+
+.search-bar-img {
+  width: 2em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 0.8em;
+  opacity: 0.5;
+}
+
+.filter-img {
+  margin-right: 1em;
+}
+
+input[type=text],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
 }
 
 /* responsive layout */
