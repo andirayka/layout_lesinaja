@@ -1,9 +1,9 @@
 body {
-  background-color: #2d9a3f;
-  background-size: 40%;
-  background-repeat: no-repeat;
-  background-position: left top;
-  background-position: 10%;
+  background-color: #2D9A3F;
+}
+
+.font-color a {
+  color: black;
 }
 
 .flex-container {
@@ -14,19 +14,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-.flex-header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
 }
 
 .flex-item-left {
@@ -41,68 +28,62 @@ body {
           flex: 70%;
 }
 
-.font {
-  font-size: 150%;
+.flex-content-right {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  margin-left: 1%;
 }
 
-input[type="file"],
-select {
-  width: 50%;
-  padding: 12px 20px;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-bottom: 0.2em;
+.flex-content-left {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  margin-left: 1%;
 }
 
-input[type="text"],
-select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-input[type="password"],
-select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-input[type="submit"] {
-  width: 100%;
-  background-color: #ffcc00;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
+.show-detail {
+  background-color: cornflowerblue;
+  border: 0px;
   cursor: pointer;
+  text-decoration: none;
+  display: block;
+  border-radius: 4px;
+  padding: 15px 12px;
+  color: white;
+  text-align: center;
 }
 
-input[type="submit"]:hover {
-  background-color: #f8ac30;
+.show-detail:hover {
+  background-color: blue;
 }
 
-.isiProfil {
+.font {
+  font-size: 120%;
+  padding-bottom: 5%;
+}
+
+.isi {
   border-radius: 5px;
-  background-color: white;
-  padding: 20px;
+  padding: 1px 20px;
+}
+
+.content {
   margin-right: 4%;
+  margin-left: 1%;
+}
+
+.isi h2 {
+  color: white;
+}
+
+.header {
+  padding: 2px;
+  padding-left: 20px;
   margin-top: 5%;
+  margin-right: 4%;
   margin-left: 2%;
+  background-color: white;
 }
 
 .sidenav {
@@ -116,16 +97,24 @@ input[type="submit"]:hover {
 }
 
 .sidenav-main-img {
-  width: 100%;
+  margin: 0 15%;
+  width: 70%;
   height: auto;
 }
 
-.sidenav-img {
+.sidenav-imgs {
   width: 1.5em;
 }
 
-.sidenav-profil-img {
+.button-logo {
+  text-align: left;
+  background-color: white;
+  border: 0px solid green;
+  color: black;
+  padding: 1em 1em;
+  font-size: 16px;
   width: 100%;
+  display: block;
 }
 
 .btn-group .button {
@@ -141,15 +130,20 @@ input[type="submit"]:hover {
   display: block;
 }
 
-.btn-group .button-logo {
-  text-align: left;
-  background-color: white;
-  border: 0px solid green;
-  color: black;
-  padding: 1em 1em;
-  font-size: 16px;
+.btn-group .button img {
   width: 100%;
-  display: block;
+}
+
+.judul {
+  margin-top: 2%;
+  background-color: cornflowerblue;
+}
+
+.konten {
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 2%;
 }
 
 .atas {
@@ -158,24 +152,21 @@ input[type="submit"]:hover {
 
 .bawah {
   border-radius: 0px 0px 5px 5px;
+  margin-bottom: 2%;
 }
 
 .btn-group .button:hover {
-  background-color: #ffcc00;
+  background-color: #FFCC00;
   width: 100%;
 }
 
-textarea {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 100%;
-  height: 5%;
+a {
+  text-decoration: none;
 }
 
 /* clear default styling */
 .default-link {
   text-decoration: none;
-  color: #000;
 }
 
 .default-list {
@@ -219,7 +210,7 @@ nav.navbar {
   overflow: auto;
 }
 
-nav.navbar button {
+nav.navbar li button {
   float: right;
   padding: 1em;
   font-size: 1em;
@@ -270,12 +261,8 @@ nav.navbar ul {
   nav.navbar {
     display: block;
   }
-  .isiProfil {
-    margin-top: 15%;
+  .header {
+    margin-top: 4em;
   }
-}
-
-a {
-  text-decoration: none;
 }
 /*# sourceMappingURL=index.css.map */
