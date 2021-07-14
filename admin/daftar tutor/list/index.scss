@@ -258,6 +258,21 @@ input:focus {
   outline: none;
 }
 
+/* pagination */
+.pagination-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 2%;
+}
+
+.pagination-item {
+  padding: 0.7em;
+  margin: 1em;
+  border-radius: 0.3em;
+  background-color: #FFFE7A;
+}
+
 /* responsive layout */
 /* desktop */
 @media screen and (min-width: 769px) and (max-width: 2000px) {
