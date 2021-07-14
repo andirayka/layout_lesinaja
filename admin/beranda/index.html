@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda Admin</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><img src="../../img/main-logo.png" alt="" class="navbar-img"></li>
+            <li style="float: right;"><button onclick="openNav()">☰</button></li>
+        </ul>
+    </nav>
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <ul class="default-list mobile-sidebar-items font-color" id="mobileSidebarItems">
+            <li><a href="javascript:void(0)" class="closebtn default-link" onclick="closeNav()" style="color: #000;">×</a></li>
+            <li><a href="../beranda/index.html">Beranda</a></li>
+            <li><a href="../akun/index.html">Akun</a></li>
+            <li><a href="../data-master/list/index.html">Data Master</a></li>
+            <li><a href="../daftar tutor/list/index.html">Daftar Tutor</a></li>
+            <li><a href="../riwayat-pembayaran/index.html">Riwayat Pembayaran</a></li>
+            <li><a href="../pilihan-les/index.html">Pilihan Les</a></li>
+            <li><a href="../../login/login.html">Keluar</a></li>
+        </ul>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item-left">
+            <div class="sidenav">
+                <div class="btn-group">
+                    <button class="button-logo atas">
+                        <img src="../../img/main-logo.png" alt="" class="sidenav-main-img">
+                    </button>
+                    <a href="../beranda/index.html">
+                        <button class="button" style="background-color: #FFCC00;">
+                            <table>
+                                <tr>
+                                    <td><img src="../../img/icon-beranda.png" alt="" style="width: 2em;"></td>
+                                    <td>Beranda</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
+                    <a href="../akun/index.html">
+                        <button class="button">
+                            <table>
+                                <tr>
+                                    <td><img src="../../img/icon-akun.png" alt="" style="width: 2em;"></td>
+                                    <td>Akun</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
+                    <a href="../data-master/list/index.html">
+                        <button class="button">
+                            <table>
+                                <tr>
+                                    <td><img src="../../img/icon-lowongan.png" alt="" style="width: 2em;"></td>
+                                    <td>Data Master</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
+                    <a href="../daftar tutor/list/index.html">
+                        <button class="button">
+                            <table>
+                                <tr>
+                                    <td><img src="../../img/icon-les.png" alt="" style="width: 2em;"></td>
+                                    <td>Daftar Tutor</td>
+                                </tr>
+                            </table>                
+                        </button>
+                    </a>
+                    <a href="../riwayat-pembayaran/index.html">
+                        <button class="button">
+                            <table>
+                                <tr>
+                                    <td><img src="../../img/icon-riwayat.png" alt="" style="width: 2em;"></td>
+                                    <td>Riwayat Pembayaran</td>
+                                </tr>
+                            </table>                
+                        </button>
+                    </a>
+                    <a href="../pilihan-les/index.html">
+                        <button class="button">
+                            <table>
+                                <tr>
+                                    <td><img src="../../img/icon-pilihan.png" alt="" style="width: 2em;"></td>
+                                    <td>Pilihan Les</td>
+                                </tr>
+                            </table>                
+                        </button>
+                    </a>
+                    <a href="../../login/login.html">
+                        <button class="button bawah">
+                            <table>
+                                <tr>
+                                    <td><img src="../../img/icon-keluar.png" alt="" style="width: 2em;"></td>
+                                    <td>Keluar</td>
+                                </tr>
+                            </table>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="flex-item-right">
+            <div class="isi header">
+                <h1>Beranda Administrator</h1>
+            </div>
+
+            <div class="isi atas judul">
+                <h2>Notifikasi Terbaru</h2>
+            </div>
+    
+            <div class="isi bawah konten">
+                <div class="notif">
+                    <ul>
+                        <li>
+                            <a class="time">12 Juli 2020, 08:00</a><br>
+                            <a>Tutor Zainal Abidin menunggu pembayaran Rp 200.000 ke rekening 112334456666</a>
+                        </li>
+                        <li class="aksi">
+                            <a href="#"><button class="tandai">Tandai Sudah Dibaca</button></a>
+                        </li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="notif">
+                    <ul>
+                        <li>
+                            <a class="time">12 Juli 2020, 08:00</a><br>
+                            <a>Tutor Zainal Abidin menunggu pembayaran Rp 200.000 ke rekening 112334456666</a>
+                        </li>
+                        <li class="aksi">
+                            <a href="#"><button class="tandai">Tandai Sudah Dibaca</button></a>
+                        </li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="notif">
+                    <ul>
+                        <li>
+                            <a class="time">12 Juli 2020, 08:00</a><br>
+                            <a>Tutor Zainal Abidin menunggu pembayaran Rp 200.000 ke rekening 112334456666</a>
+                        </li>
+                        <li class="aksi">
+                            <!-- <a href="#"><button class="tandai">Tandai Sudah Dibaca</button></a> -->
+                        </li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="pagination-container">
+                    <div class="pagination-item">1</div>
+                    <div class="pagination-item">2</div>
+                    <div class="pagination-item">3</div>
+                    <div class="pagination-item">4</div>
+                    <div class="pagination-item">5</div>
+                </div>
+            </div>
+
+            <div class="isi atas judul">
+                <h2>Efektifitas Sosial Media</h2>
+            </div>
+    
+            <div class="isi bawah konten">
+                <div class="notif">
+                    <h3>
+                        <a style="float: left;">Sosial Media</a>
+                        <a>Efektivitas</a>
+                        <a style="float: right;">Keterangan</a>
+                    </h3>
+                    <hr>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td style="width: 6%;">
+                                <img src="../../img/icon-fb.png" alt="" style="width: 100%;">
+                            </td>
+                            <td style="width: 25%;">
+                                Facebook
+                            </td>
+                            <td style="width: 30%; text-align: center;">
+                                40%
+                            </td>
+                            <td>
+                                100 wali murid tahu Lesin Aja dari Facebook
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <table>
+                        <tr>
+                            <td style="width: 6%;">
+                                <img src="../../img/icon-ig.png" alt="" style="width: 100%;">
+                            </td>
+                            <td style="width: 25%;">
+                                Facebook
+                            </td>
+                            <td style="width: 30%; text-align: center;">
+                                20%
+                            </td>
+                            <td>
+                                50 wali murid tahu Lesin Aja dari Facebook
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mobileSidebar").style.display = "block";
+            document.getElementById("mobileSidebarItems").style.display = "block";
+            document.getElementById("mobileSidebar").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mobileSidebar").style.display = "none";
+            document.getElementById("mobileSidebarItems").style.display = "none";
+        }
+    </script>
+</body>
+</html>

@@ -116,8 +116,13 @@ input[type="submit"]:hover {
 }
 
 .sidenav-main-img {
-  width: 100%;
+  margin: 0 15%;
+  width: 70%;
   height: auto;
+}
+
+.font-color a {
+  color: #000;
 }
 
 .sidenav-img {

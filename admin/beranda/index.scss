@@ -19,20 +19,20 @@ body {
     flex: 70%;
   }
   
-  .show-detail {
-    background-color: #FFCC00;
+  .tandai {
+    background-color: cornflowerblue;
     border: 0px ;
     cursor: pointer;
     text-decoration: none;
     display: block;
     border-radius: 4px;
     padding: 15px 12px;
-    font-size: medium;
     text-align: center;
+    color: white;
   }
 
-  .show-detail:hover {
-    background-color: rgb(255, 153, 0);
+  .tandai:hover {
+    background-color: rgb(0, 110, 255);
   }
   
   .font {
@@ -79,10 +79,6 @@ body {
     width: 70%;
     height: auto;
   }
-
-  .font-color {
-    color: black;
-  }
   
   .sidenav-imgs {
     width: 1.5em;
@@ -118,10 +114,6 @@ body {
   .judul {
     margin-top: 2%;
     background-color: cornflowerblue;
-    .aksi {
-        float: right;
-        margin-right: 3%;
-    }
   }
   
   .konten {
@@ -149,15 +141,34 @@ body {
     text-decoration: none;
   }
 
-  .icon-aksi {
+  .notif {
       padding: {
-          top: 2%;
-          bottom: 2%;
+          top: 1%;
+          bottom: 1%;
       };
-      img {
-        float: right;
-        margin-right: 1em;
-        width: 1.5em;
+
+      h3 {
+          text-align: center;
+          margin: {
+              left: 5%;
+              right: 15%;
+          };
+      }
+      .time {
+          color: #9D9CB5;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        li {
+            float: left;
+        }
+        .aksi {
+            float: right;
+        }
       }
   }
   
@@ -259,3 +270,18 @@ body {
       margin-top: 4em;
     }
   }/*# sourceMappingURL=index.css.map */
+
+  /* pagination */
+.pagination-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 2%;
+  }
+  
+  .pagination-item {
+    padding: 0.7em;
+    margin: 1em;
+    border-radius: 0.3em;
+    background-color: #fffe7a;
+  }

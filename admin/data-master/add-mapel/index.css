@@ -89,6 +89,10 @@ body {
   height: auto;
 }
 
+.font-color {
+  color: black;
+}
+
 .sidenav-imgs {
   width: 1.5em;
 }
