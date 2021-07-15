@@ -7,25 +7,16 @@ body {
 }
 
 .flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 
 .flex-item-left {
-  -webkit-box-flex: 30%;
-      -ms-flex: 30%;
-          flex: 30%;
+  flex: 30%;
 }
 
 .flex-item-right {
-  -webkit-box-flex: 70%;
-      -ms-flex: 70%;
-          flex: 70%;
+  flex: 70%;
 }
 
 .show-detail {
@@ -129,7 +120,6 @@ body {
   margin-top: 2%;
   background-color: cornflowerblue;
 }
-
 .judul .aksi {
   float: right;
   margin-right: 3%;
@@ -164,7 +154,6 @@ a {
   padding-top: 2%;
   padding-bottom: 2%;
 }
-
 .icon-aksi img {
   float: right;
   margin-right: 1em;
@@ -244,32 +233,29 @@ nav.navbar ul {
 /* desktop */
 @media screen and (min-width: 769px) and (max-width: 2000px) {
   .flex-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
+
   nav.navbar {
     display: none;
   }
 }
-
 /* mobile */
 @media screen and (min-width: 200px) and (max-width: 768px) {
   .flex-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
+
   .flex-item-left .sidenav {
     display: none;
   }
+
   nav.navbar {
     display: block;
   }
+
   .header {
     margin-top: 4em;
   }
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=index.css.map *//*# sourceMappingURL=index.css.map */

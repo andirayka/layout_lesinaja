@@ -7,25 +7,16 @@ body {
 }
 
 .flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 
 .flex-item-left {
-  -webkit-box-flex: 30%;
-      -ms-flex: 30%;
-          flex: 30%;
+  flex: 30%;
 }
 
 .flex-item-right {
-  -webkit-box-flex: 70%;
-      -ms-flex: 70%;
-          flex: 70%;
+  flex: 70%;
 }
 
 .tandai {
@@ -89,7 +80,7 @@ body {
   height: auto;
 }
 
-.sidenav-imgs {
+.sidenav-img {
   width: 1.5em;
 }
 
@@ -155,28 +146,23 @@ a {
   padding-top: 1%;
   padding-bottom: 1%;
 }
-
 .notif h3 {
   text-align: center;
   margin-left: 5%;
   margin-right: 15%;
 }
-
 .notif .time {
   color: #9D9CB5;
 }
-
 .notif ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
-
 .notif ul li {
   float: left;
 }
-
 .notif ul .aksi {
   float: right;
 }
@@ -254,46 +240,36 @@ nav.navbar ul {
 /* desktop */
 @media screen and (min-width: 769px) and (max-width: 2000px) {
   .flex-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
+
   nav.navbar {
     display: none;
   }
 }
-
 /* mobile */
 @media screen and (min-width: 200px) and (max-width: 768px) {
   .flex-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
+
   .flex-item-left .sidenav {
     display: none;
   }
+
   nav.navbar {
     display: block;
   }
+
   .header {
     margin-top: 4em;
   }
 }
 /* pagination */
 .pagination-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   margin-left: 2%;
 }
 
@@ -303,4 +279,4 @@ nav.navbar ul {
   border-radius: 0.3em;
   background-color: #fffe7a;
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=index.css.map *//*# sourceMappingURL=index.css.map */
