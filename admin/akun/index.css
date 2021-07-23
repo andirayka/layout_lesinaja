@@ -6,8 +6,6 @@ body {
 }
 
 .flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -40,7 +38,6 @@ input[type="password"] {
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -219,11 +216,11 @@ nav.navbar ul {
     -ms-flex-direction: row;
     flex-direction: row;
   }
+
   nav.navbar {
     display: none;
   }
 }
-
 /* mobile */
 @media screen and (min-width: 200px) and (max-width: 768px) {
   .flex-container {
@@ -232,14 +229,16 @@ nav.navbar ul {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+
   .flex-item-left .sidenav {
     display: none;
   }
+
   nav.navbar {
     display: block;
   }
+
   .isiProfil {
     margin-top: 15%;
   }
 }
-/*# sourceMappingURL=index.css.map */
