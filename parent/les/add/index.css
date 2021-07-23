@@ -1,5 +1,8 @@
 body {
-  background-color: #2d9a3f;
+  background-image: url(../../../img/bg-3.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .flex-container {
@@ -15,7 +18,7 @@ body {
   flex: 70%;
 }
 
-input[type=submit] {
+input[type="submit"] {
   width: 100%;
   padding: 16px 20px;
   margin: 8px 0;
@@ -27,11 +30,11 @@ input[type=submit] {
   font-size: 110%;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #f8ac30;
 }
 
-input[type=text],
+input[type="text"],
 select {
   background-color: white;
   width: 100%;
@@ -156,6 +159,7 @@ a {
 .form-harga-container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 5%;
 }
 .form-harga-container .label-harga {
   color: #000;
@@ -167,7 +171,7 @@ a {
 }
 .form-harga-container .label-border {
   width: 30%;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid black;
   align-self: center;
 }
 
@@ -188,7 +192,7 @@ a {
   font-size: 1.5em;
 }
 
-.font-color a{
+.font-color a {
   color: black;
 }
 
@@ -283,4 +287,4 @@ nav.navbar ul {
   .form-harga-container .label-border {
     width: 40%;
   }
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */

@@ -1,5 +1,8 @@
 body {
-  background-color: #2d9a3f;
+  background-image: url(../../../img/bg-3.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .flex-container {
@@ -15,7 +18,7 @@ body {
   flex: 70%;
 }
 
-input[type=submit] {
+input[type="submit"] {
   width: 100%;
   padding: 16px 20px;
   margin: 8px 0;
@@ -23,15 +26,17 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   color: black;
-  background-color: #FFCC00;
+  background-color: #ffcc00;
   font-size: 110%;
 }
 
-input[type=submit]:hover {
-  background-color: #F8AC30;
+input[type="submit"]:hover {
+  background-color: #f8ac30;
 }
 
-input[type=text] {
+input[type="text"],
+select {
+  background-color: white;
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -105,7 +110,7 @@ input[type=text] {
 }
 
 .btn-group .button:hover {
-  background-color: #FFCC00;
+  background-color: #ffcc00;
   width: 100%;
 }
 
@@ -216,4 +221,4 @@ nav.navbar ul {
     margin-top: 11.5%;
     margin-bottom: 5px;
   }
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */

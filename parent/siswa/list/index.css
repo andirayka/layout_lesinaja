@@ -1,5 +1,8 @@
 body {
-  background-color: #2d9a3f;
+  background-image: url(../../../img/bg-3.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .flex-container {
@@ -31,7 +34,7 @@ body {
   padding-bottom: 5%;
 }
 
-input[type=submit] {
+input[type="submit"] {
   width: 100%;
   padding: 16px 20px;
   margin: 8px 0;
@@ -252,4 +255,4 @@ nav.navbar ul {
   .header {
     margin-top: 4em;
   }
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */

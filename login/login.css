@@ -1,11 +1,15 @@
 body {
-    background-color: #2D9A3F;
-    background-image: url(../img/logreg-logo.svg);
-    background-size: 40%;
+    background-image: url(../img/bg-3.jpg);
+    /*background-image: url(../img/logreg-logo.svg);*/
+    background-size: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: left top;
-    background-position: 10%;
+}
+
+img {
+    position: fixed;
+    padding: 7%;
+    width: 40%;
 }
 
 .flex-container {
@@ -62,7 +66,7 @@ input[type=submit]:hover {
   
 .isi {
     border-radius: 5px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 1.0);
     padding: 20px;
     margin: 3% 10%;
     margin-right: 20%;

@@ -1,5 +1,8 @@
 body {
-  background-color: #2d9a3f;
+  background-image: url(../../../img/bg-3.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .flex-container {
@@ -112,7 +115,7 @@ body {
 .flex-item-right .rating .form {
   width: 100%;
 }
-.flex-item-right .rating .form input[type=text] {
+.flex-item-right .rating .form input[type="text"] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -260,4 +263,4 @@ nav.navbar ul {
   .flex-item-right .rating .button-rating {
     font-size: 0.7em;
   }
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */

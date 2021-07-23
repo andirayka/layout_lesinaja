@@ -1,5 +1,8 @@
 body {
-  background-color: #2d9a3f;
+  background-image: url(../../../img/bg-3.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .flex-container {
@@ -8,20 +11,20 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .flex-item-left {
   -webkit-box-flex: 30%;
-      -ms-flex: 30%;
-          flex: 30%;
+  -ms-flex: 30%;
+  flex: 30%;
 }
 
 .flex-item-right {
   -webkit-box-flex: 70%;
-      -ms-flex: 70%;
-          flex: 70%;
+  -ms-flex: 70%;
+  flex: 70%;
 }
 
 .flex-item-right ul {
@@ -239,8 +242,8 @@ nav.navbar ul {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   border-radius: 5px;
   padding: 1px 20px;
   margin-right: 4%;
@@ -274,7 +277,7 @@ select {
   border: 0;
   border-radius: 4px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 input:focus {
@@ -288,11 +291,11 @@ input:focus {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: 2%;
 }
 
@@ -300,7 +303,7 @@ input:focus {
   padding: 0.7em;
   margin: 1em;
   border-radius: 0.3em;
-  background-color: #FFFE7A;
+  background-color: #fffe7a;
 }
 
 /* responsive layout */
@@ -309,8 +312,8 @@ input:focus {
   .flex-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
   nav.navbar {
     display: none;
@@ -322,8 +325,8 @@ input:focus {
   .flex-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .flex-item-left .sidenav {
     display: none;

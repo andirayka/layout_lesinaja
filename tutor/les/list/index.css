@@ -1,5 +1,8 @@
 body {
-  background-color: #2D9A3F;
+  background-image: url(../../../img/bg-3.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .font-color a {
@@ -30,7 +33,7 @@ body {
 }
 .flex-item-right ul li .presensi {
   background-color: cornflowerblue;
-  border: 0px ;
+  border: 0px;
   cursor: pointer;
   text-decoration: none;
   display: block;
@@ -48,13 +51,13 @@ body {
   padding-bottom: 5%;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: blue;
 }
 
 .tombol {
   width: 30%;
-  background-color: #FFCC00;
+  background-color: #ffcc00;
   padding: 14px;
   border: none;
   border-radius: 4px;
@@ -70,7 +73,7 @@ input[type=submit]:hover {
 }
 
 .tombol:hover {
-  background-color: #F8AC30;
+  background-color: #f8ac30;
 }
 
 .isi {
@@ -158,7 +161,7 @@ input[type=submit]:hover {
 }
 
 .btn-group .button:hover {
-  background-color: #FFCC00;
+  background-color: #ffcc00;
   width: 100%;
 }
 
@@ -263,4 +266,4 @@ nav.navbar ul {
   .header {
     margin-top: 4em;
   }
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */
