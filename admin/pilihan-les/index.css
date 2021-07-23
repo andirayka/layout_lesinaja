@@ -37,27 +37,27 @@ body {
 }
 
 .unduh-bukti-btn {
-  background-color: cornflowerblue;
+  background-color: #fbbf24;
   text-decoration: none;
   display: block;
   border-radius: 4px;
   padding: 15px 12px;
   margin-right: 2em;
-  color: white;
+  color: black;
   text-align: center;
 }
 
 .unduh-bukti-btn:hover {
-  background-color: blue;
+  background-color: #c79c00;
 }
 
 .konfirmasi-btn {
-  background-color: red;
+  background-color: #c79c00;
   text-decoration: none;
   display: block;
   border-radius: 4px;
   padding: 15px 12px;
-  color: white;
+  color: black;
   text-align: center;
 }
 
@@ -81,6 +81,11 @@ body {
   cursor: pointer;
   margin: 2%;
   text-align: center;
+  color: #000;
+}
+
+.tombol:hover {
+  background-color: white;
 }
 
 .isi {
@@ -90,7 +95,7 @@ body {
   margin-left: 2%;
 }
 .isi h2 {
-  color: white;
+  color: black;
 }
 
 .header {
@@ -162,7 +167,7 @@ body {
 }
 
 .judul {
-  background-color: cornflowerblue;
+  background-color: #fbbf24;
   margin-top: 2%;
 }
 

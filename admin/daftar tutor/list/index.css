@@ -35,16 +35,16 @@ body {
   width: 20%;
 }
 .flex-item-right ul li .lihat-detail {
-  background-color: cornflowerblue;
+  background-color: #fbbf24;
   text-decoration: none;
   display: block;
   border-radius: 4px;
   padding: 15px 12px;
-  color: white;
+  color: black;
   text-align: center;
 }
 .flex-item-right ul li .lihat-detail:hover {
-  background-color: blue;
+  background-color: #c79c00;
 }
 
 .font {
@@ -70,7 +70,7 @@ body {
   margin-left: 2%;
 }
 .isi h2 {
-  color: white;
+  color: black;
 }
 
 .header {
@@ -142,7 +142,7 @@ body {
 }
 
 .judul {
-  background-color: cornflowerblue;
+  background-color: #fbbf24;
   margin-top: 2%;
 }
 
@@ -243,7 +243,7 @@ nav.navbar ul {
   padding-left: 20px;
   margin-top: 2%;
   background-color: white;
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 .search-bar-img {

@@ -27,7 +27,6 @@ body {
   padding-left: 20px;
   margin-top: 5%;
   background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .font {
@@ -60,7 +59,7 @@ input[type="submit"]:hover {
 .presensi {
   background-color: #fbbf24;
   border-radius: 4px;
-  color: white;
+  color: black;
   margin-right: 1em;
   padding: 1em 1em;
   text-decoration: none;
@@ -70,11 +69,8 @@ input[type="submit"]:hover {
 }
 
 .presensi:hover {
-  background-color: white;
+  background-color: #c79c00;
   color: black;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #fbbf24;
 }
 
 .batal {
@@ -83,7 +79,7 @@ input[type="submit"]:hover {
   display: block;
   border-radius: 4px;
   padding: 1em 1em;
-  color: white;
+  color: black;
 }
 
 .batal:hover {
@@ -91,7 +87,6 @@ input[type="submit"]:hover {
 }
 
 .tombol {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 30%;
   background-color: #fbbf24;
   padding: 14px;
@@ -110,13 +105,9 @@ input[type="submit"]:hover {
 
 .tombol:hover {
   background-color: white;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #fbbf24;
 }
 
 .isi {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
   padding: 1px 20px;
   margin-right: 4%;
@@ -132,7 +123,6 @@ input[type="submit"]:hover {
   left: 3%;
   overflow-x: hidden;
   padding: 8px 0;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .sidenav-main-img {
@@ -178,7 +168,7 @@ input[type="submit"]:hover {
 }
 
 .btn-group .button:hover {
-  background-color: greenyellow;
+  background-color: #fbbf24;
   width: 100%;
 }
 

@@ -44,19 +44,19 @@ body {
 }
 
 .show-detail {
-  background-color: cornflowerblue;
+  background-color: #fbbf24;
   border: 0px;
   cursor: pointer;
   text-decoration: none;
   display: block;
   border-radius: 4px;
   padding: 15px 12px;
-  color: white;
+  color: black;
   text-align: center;
 }
 
 .show-detail:hover {
-  background-color: blue;
+  background-color: #c79c00;
 }
 
 .font {
@@ -75,7 +75,7 @@ body {
 }
 
 .isi h2 {
-  color: white;
+  color: black;
 }
 
 .header {
@@ -137,7 +137,7 @@ body {
 
 .judul {
   margin-top: 2%;
-  background-color: cornflowerblue;
+  background-color: #fbbf24;
 }
 
 .konten {
