@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List Tutor</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Tambah Pilihan Les</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar">        
         <ul>
             <li><img src="../../../img/main-logo.png" alt="" class="navbar-img"></li>
             <li><button onclick="openNav()">☰</button></li>
@@ -16,7 +16,7 @@
     </nav>
     <div class="mobile-sidebar" id="mobileSidebar">
         <ul class="default-list mobile-sidebar-items font-color" id="mobileSidebarItems">
-            <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
+            <li><a href="javascript:void(0)" class="closebtn default-link" onclick="closeNav()">×</a></li>
             <li><a href="../../beranda/index.html">Beranda</a></li>
             <li><a href="../../akun/index.html">Akun</a></li>
             <li><a href="../../data-master/list/index.html">Data Master</a></li>
@@ -64,7 +64,7 @@
                         </button>
                     </a>
                     <a href="../../daftar tutor/list/index.html">
-                        <button class="button" style="background-color: #FFCC00;">
+                        <button class="button">
                             <table>
                                 <tr>
                                     <td><img src="../../../img/icon-les.png" alt="" style="width: 1.5em;"></td>
@@ -84,7 +84,7 @@
                         </button>
                     </a>
                     <a href="../../pilihan-les/list/index.html">
-                        <button class="button">
+                        <button class="button" style="background-color: #FFCC00;">
                             <table>
                                 <tr>
                                     <td><img src="../../../img/icon-pilihan.png" alt="" style="width: 1.5em;"></td>
@@ -106,93 +106,46 @@
                 </div>
             </div>
         </div>
+
         <div class="flex-item-right">
-            <div class="isi header">
-                <h1>Daftar Tutor Lesin Aja</h1>
-            </div>
-
-            <div class="search-container">
-                <img src="../../../img/search.png" alt="" class="search-bar-img">
-                <input type="text" name="" id="" placeholder="Cari tutor">
-                <img src="../../../img/filter.png" alt="" class="search-bar-img filter-img">
-            </div>
-
-            <div class="isi atas judul">
-                <h2>Abdul Majid, S.kom</h2>
-            </div>
-
-            <div class="isi bawah konten">
+            <div class="isiProfil">
                 <form action="#">
-                    <table>
-                        <tr>
-                            <td class="font">Email</td>
-                            <td class="font">abdulmajid@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td class="font">No. WA</td>
-                            <td class="font">0899123897775</td>
-                        </tr>
-                        <tr>
-                            <td class="font">Alamat</td>
-                            <td class="font">: Perum Graha Kuncara Blok H No.29 Kemiri</td>
-                        </tr>
-                        <tr>
-                            <td class="font">Mata Pelajaran</td>
-                            <td class="font">Matematika SMP, Matematika SD</td>
-                        </tr>
-                    </table>
+                    <h1>Tambah Les</h1>
 
-                    <ul>
-                        <li>
-                            <a href="../detail/index.html" class="lihat-detail">Lihat detail</a>
-                        </li>
-                    </ul>
+                    <label for="alamat">Mapel</label>
+                    <select id="provinsi" name="provinsi" style="background-color: white; border: 1px solid #ccc;">
+                        <option>Pilih Mapel</option>
+                        <option>MTK</option>
+                        <option>Agama</option>
+                    </select>
+
+                    <label for="alamat">Jenjang Kelas</label>
+                    <select id="provinsi" name="provinsi" style="background-color: white; border: 1px solid #ccc;">
+                        <option>Pilih Jenjang</option>
+                        <option>3 SD</option>
+                        <option>PAUD</option>
+                    </select>
+
+                    <label for="">Wilayah</label>
+                    <select id="" name="" style="background-color: white; border: 1px solid #ccc;">
+                        <option>Pilih Wilayah</option>
+                        <option>Jawa Barat</option>
+                        <option>Jawa Tengah</option>
+                    </select>
+
+                    <label for="gender">Pilih Paket</label><br><br>
+                    <input type="radio" id="" name="gender">Paket 1 (4 Pertemuan)
+                    <input type="radio" id="" name="gender">Paket 2 (8 Pertemuan)
+                    <input type="radio" id="" name="gender">paket 3 (12 Pertemuan)
+                    <br><br>
+
+                    <label for="perguruan">Harga</label>
+                    <input type="text" id="perguruan" name="perguruan" placeholder="Masukkan harga pilihan les">
+
+                    <input type="submit" value="Simpan">
 
                 </form>
             </div>
-
-            <div class="isi atas judul">
-                <h2>Epy Kusnandar, S.kom</h2>
-            </div>
-
-            <div class="isi bawah konten">
-                <form action="#">
-                    <table>
-                        <tr>
-                            <td class="font">Email</td>
-                            <td class="font">epikus@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td class="font">No. WA</td>
-                            <td class="font">0851113899995</td>
-                        </tr>
-                        <tr>
-                            <td class="font">Alamat</td>
-                            <td class="font">: Perum Graha Kuncara Blok H No.29 Kemiri</td>
-                        </tr>
-                        <tr>
-                            <td class="font">Mata Pelajaran</td>
-                            <td class="font">: Fisika Quantum</td>
-                        </tr>
-                    </table>
-
-                    <ul>
-                        <li>
-                            <a href="#" class="lihat-detail">Lihat detail</a>
-                        </li>
-                    </ul>
-
-                </form>
-            </div>
-
-            <div class="pagination-container">
-                <div class="pagination-item">1</div>
-                <div class="pagination-item">2</div>
-                <div class="pagination-item">3</div>
-                <div class="pagination-item">4</div>
-                <div class="pagination-item">5</div>
-            </div>
-
         </div>
     </div>
     <script>
