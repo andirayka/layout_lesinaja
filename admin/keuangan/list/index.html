@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daftar Mapel</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Keuangan</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <nav class="navbar">
         <ul>
             <li><img src="../../../img/main-logo.png" alt="" class="navbar-img"></li>
-            <li style="float: right;"><button onclick="openNav()">☰</button></li>
+            <li><button onclick="openNav()">☰</button></li>
         </ul>
     </nav>
     <div class="mobile-sidebar" id="mobileSidebar">
         <ul class="default-list mobile-sidebar-items font-color" id="mobileSidebarItems">
-            <li><a href="javascript:void(0)" class="closebtn default-link" onclick="closeNav()" style="color: #000;">×</a></li>
+            <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
             <li><a href="../../beranda/index.html">Beranda</a></li>
             <li><a href="../../akun/index.html">Akun</a></li>
             <li><a href="../../data-master/list/index.html">Data Master</a></li>
@@ -55,7 +55,7 @@
                         </button>
                     </a>
                     <a href="../../data-master/list/index.html">
-                        <button class="button" style="background-color: #FFCC00;">
+                        <button class="button">
                             <table>
                                 <tr>
                                     <td><img src="../../../img/icon-lowongan.png" alt="" style="width: 1.5em;"></td>
@@ -95,7 +95,7 @@
                         </button>
                     </a>
                     <a href="../../keuangan/list/index.html">
-                        <button class="button">
+                        <button class="button" style="background-color: #FFCC00;">
                             <table>
                                 <tr>
                                     <td><img src="../../../img/icon-finance.png" alt="" style="width: 1.5em;"></td>
@@ -119,39 +119,60 @@
         </div>
         <div class="flex-item-right">
             <div class="isi header">
-                <h1>Daftar Mapel</h1>
+                <h1>Keuangan bulan Juli 2021</h1>
             </div>
-
-            <div class="button-tambah">
-                <a href="#"><button class="show-detail">Tambah Mapel</button></a>
-            </div>
+            
+            
+            <a href="../add/index.html" class="tombol">Input Pengeluaran</a>            
 
             <div class="isi atas judul">
-                <h2>
-                    <a>Jenjang Kelas</a>
-                    <a class="aksi">Aksi</a>
-                </h2>
+                <h2>Rangkuman</h2>
             </div>
-    
+
             <div class="isi bawah konten">
-                <div class="icon-aksi">
-                    <a>PAUD</a>
-                    <a href=""><img src="../../../img/icon-edit.png" alt=""></a>
-                    <a href=""><img src="../../../img/icon-delete.png" alt=""></a>
-                    <hr>
-                </div>
-                <div class="icon-aksi">
-                    <a>TK</a>
-                    <a href=""><img src="../../../img/icon-edit.png" alt=""></a>
-                    <a href=""><img src="../../../img/icon-delete.png" alt=""></a>
-                    <hr>
-                </div>
-                <div class="icon-aksi">
-                    <a>1 SD</a>
-                    <a href=""><img src="../../../img/icon-edit.png" alt=""></a>
-                    <a href=""><img src="../../../img/icon-delete.png" alt=""></a>
-                    <hr>
-                </div>
+                <form action="#">
+                    <table>
+                        <tr>
+                            <td class="font">Pemasukkan Biaya Les</td>
+                            <td class="font">:</td>
+                            <td class="font">Rp 500.000</td>
+                        </tr>
+                        <tr>
+                            <td class="font">Pembayaran Tutor</td>
+                            <td class="font">:</td>
+                            <td class="font">RP 400.000</td>
+                        </tr>
+                        <tr>
+                            <td class="font">Laba kotor</td>
+                            <td class="font">:</td>
+                            <td class="font">Rp 100.000</td>
+                        </tr>
+                        <tr>
+                            <td class="font">Sadaqah</td>
+                            <td class="font">:</td>
+                            <td class="font">Rp 20.000</td>
+                        </tr>
+                        <tr>
+                            <td class="font">Pengeluaran</td>
+                            <td class="font">:</td>
+                            <td class="font">Rp 50.000</td>
+                        </tr>
+                    </table>
+
+                    <h2 style="text-align: center;">Total Biaya</h2>
+                    <div class="form-harga-container">                        
+                        <div class="label-harga">Rp 400.000</div>
+                        <div class="label-border"></div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="pagination-container">
+                <div class="pagination-item">1</div>
+                <div class="pagination-item">2</div>
+                <div class="pagination-item">3</div>
+                <div class="pagination-item">4</div>
+                <div class="pagination-item">5</div>
             </div>
         </div>
     </div>

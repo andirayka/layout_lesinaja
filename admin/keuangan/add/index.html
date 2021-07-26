@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daftar Mapel</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Tambah Pengeluaran Admin</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <nav class="navbar">
         <ul>
             <li><img src="../../../img/main-logo.png" alt="" class="navbar-img"></li>
-            <li style="float: right;"><button onclick="openNav()">☰</button></li>
+            <li><button onclick="openNav()">☰</button></li>
         </ul>
     </nav>
     <div class="mobile-sidebar" id="mobileSidebar">
         <ul class="default-list mobile-sidebar-items font-color" id="mobileSidebarItems">
-            <li><a href="javascript:void(0)" class="closebtn default-link" onclick="closeNav()" style="color: #000;">×</a></li>
+            <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
             <li><a href="../../beranda/index.html">Beranda</a></li>
             <li><a href="../../akun/index.html">Akun</a></li>
             <li><a href="../../data-master/list/index.html">Data Master</a></li>
@@ -55,7 +55,7 @@
                         </button>
                     </a>
                     <a href="../../data-master/list/index.html">
-                        <button class="button" style="background-color: #FFCC00;">
+                        <button class="button">
                             <table>
                                 <tr>
                                     <td><img src="../../../img/icon-lowongan.png" alt="" style="width: 1.5em;"></td>
@@ -95,7 +95,7 @@
                         </button>
                     </a>
                     <a href="../../keuangan/list/index.html">
-                        <button class="button">
+                        <button class="button" style="background-color: #FFCC00;">
                             <table>
                                 <tr>
                                     <td><img src="../../../img/icon-finance.png" alt="" style="width: 1.5em;"></td>
@@ -118,40 +118,43 @@
             </div>
         </div>
         <div class="flex-item-right">
-            <div class="isi header">
-                <h1>Daftar Mapel</h1>
-            </div>
+            <div class="isiProfil">
+                <form action="#">
+                    <h1>Input Pengeluaran Bulan Juli 2021</h1>
 
-            <div class="button-tambah">
-                <a href="#"><button class="show-detail">Tambah Mapel</button></a>
-            </div>
+                    <label for="alamat">Mapel</label>
+                    <select id="provinsi" name="provinsi" style="background-color: white; border: 1px solid #ccc;">
+                        <option>Pilih Mapel</option>
+                        <option>MTK</option>
+                        <option>Agama</option>
+                    </select>
 
-            <div class="isi atas judul">
-                <h2>
-                    <a>Jenjang Kelas</a>
-                    <a class="aksi">Aksi</a>
-                </h2>
-            </div>
-    
-            <div class="isi bawah konten">
-                <div class="icon-aksi">
-                    <a>PAUD</a>
-                    <a href=""><img src="../../../img/icon-edit.png" alt=""></a>
-                    <a href=""><img src="../../../img/icon-delete.png" alt=""></a>
-                    <hr>
-                </div>
-                <div class="icon-aksi">
-                    <a>TK</a>
-                    <a href=""><img src="../../../img/icon-edit.png" alt=""></a>
-                    <a href=""><img src="../../../img/icon-delete.png" alt=""></a>
-                    <hr>
-                </div>
-                <div class="icon-aksi">
-                    <a>1 SD</a>
-                    <a href=""><img src="../../../img/icon-edit.png" alt=""></a>
-                    <a href=""><img src="../../../img/icon-delete.png" alt=""></a>
-                    <hr>
-                </div>
+                    <label for="alamat">Jenjang Kelas</label>
+                    <select id="provinsi" name="provinsi" style="background-color: white; border: 1px solid #ccc;">
+                        <option>Pilih Jenjang</option>
+                        <option>3 SD</option>
+                        <option>PAUD</option>
+                    </select>
+
+                    <label for="">Wilayah</label>
+                    <select id="" name="" style="background-color: white; border: 1px solid #ccc;">
+                        <option>Pilih Wilayah</option>
+                        <option>Jawa Barat</option>
+                        <option>Jawa Tengah</option>
+                    </select>
+
+                    <label for="gender">Pilih Paket</label><br><br>
+                    <input type="radio" id="" name="gender">Paket 1 (4 Pertemuan)
+                    <input type="radio" id="" name="gender">Paket 2 (8 Pertemuan)
+                    <input type="radio" id="" name="gender">paket 3 (12 Pertemuan)
+                    <br><br>
+
+                    <label for="perguruan">Harga</label>
+                    <input type="text" id="perguruan" name="perguruan" placeholder="Masukkan harga pilihan les">
+
+                    <input type="submit" value="Simpan">
+
+                </form>
             </div>
         </div>
     </div>
